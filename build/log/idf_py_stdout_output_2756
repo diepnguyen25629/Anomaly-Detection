@@ -1,0 +1,907 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  4 2025 06:21:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2dfe0h (188384) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e008 vaddr=3ffbdb60 size=02010h (  8208) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c5698h (808600) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001056c0 vaddr=3ffbfb70 size=08d6ch ( 36204) load[0m
+[0;32mI (466) esp_image: segment 4: paddr=0010e434 vaddr=40080000 size=1e030h (122928) load[0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (531) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+[0;32mI (551) cpu_start: Pro cpu start user code[0m
+[0;32mI (551) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (551) cpu_start: Application information:[0m
+[0;32mI (554) cpu_start: Project name:     main[0m
+[0;32mI (559) cpu_start: App version:      1[0m
+[0;32mI (564) cpu_start: Compile time:     Jun  4 2025 06:21:57[0m
+[0;32mI (570) cpu_start: ELF file SHA256:  06e193d26...[0m
+[0;32mI (575) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (580) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (585) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (590) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (595) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (602) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFD1BA8 len 0000E458 (57 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 4009E030 len 00001FD0 (7 KiB): IRAM[0m
+[0;32mI (647) spi_flash: detected chip: generic[0m
+[0;32mI (650) spi_flash: flash io: dio[0m
+[0;33mW (654) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (667) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (678) coexist: coex firmware version: 994b23e[0m
+[0;32mI (684) main_task: Started on CPU0[0m
+[0;32mI (688) main_task: Calling app_main()[0m
+[0;32mI (728) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (731) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (733) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (818) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1391) WIFI_UART: GAP event: 10[0m
+[0;32mI (1398) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1403) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1408) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1453) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1627) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1637) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1646) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1657) MPU6500: Initializating MPU6500[0m
+[0;32mI (1662) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1666) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1671) main_task: Returned from app_main()[0m
+[0;32mI (1791) BMP280: Initializating BMP280[0m
+[0;32mI (1903) DS18B20_1_WIRE: Initializating DS18B20[0m
+[0;31mE (2267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2277) MAIN: audio full sd_record_queue[0m
+[0;31mE (2287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2307) MAIN: audio full sd_record_queue[0m
+[0;31mE (2317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2337) MAIN: audio full sd_record_queue[0m
+[0;31mE (2338) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2367) MAIN: audio full sd_record_queue[0m
+[0;31mE (2377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2412) MAIN: audio full sd_record_queue[0m
+[0;31mE (2417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2442) MAIN: audio full sd_record_queue[0m
+[0;31mE (2447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2472) MAIN: audio full sd_record_queue[0m
+[0;31mE (2477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2502) MAIN: audio full sd_record_queue[0m
+[0;31mE (2507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2532) MAIN: audio full sd_record_queue[0m
+[0;31mE (2537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2562) MAIN: audio full sd_record_queue[0m
+[0;31mE (2567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2592) MAIN: audio full sd_record_queue[0m
+[0;31mE (2597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2622) MAIN: audio full sd_record_queue[0m
+[0;31mE (2627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2667) MAIN: audio full sd_record_queue[0m
+[0;31mE (2677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2697) MAIN: audio full sd_record_queue[0m
+[0;31mE (2698) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2727) MAIN: audio full sd_record_queue[0m
+[0;31mE (2738) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2757) MAIN: audio full sd_record_queue[0m
+[0;31mE (2767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2777) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2787) MAIN: audio full sd_record_queue[0m
+[0;31mE (2797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2817) MAIN: audio full sd_record_queue[0m
+[0;31mE (2827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2847) MAIN: audio full sd_record_queue[0m
+[0;31mE (2857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2892) MAIN: audio full sd_record_queue[0m
+[0;31mE (2897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2922) MAIN: audio full sd_record_queue[0m
+[0;31mE (2927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2952) MAIN: audio full sd_record_queue[0m
+[0;31mE (2953) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2955) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2967) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2977) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2982) MAIN: audio full sd_record_queue[0m
+[0;31mE (2987) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2997) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3007) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3012) MAIN: audio full sd_record_queue[0m
+[0;31mE (3017) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3027) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3037) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3042) MAIN: audio full sd_record_queue[0m
+[0;31mE (3047) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3057) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3067) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3072) MAIN: audio full sd_record_queue[0m
+[0;31mE (3077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3087) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3102) MAIN: audio full sd_record_queue[0m
+[0;31mE (3107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3147) MAIN: audio full sd_record_queue[0m
+[0;32mI (3155) MAIN: Recording: ON[0m
+[0;32mI (3180) SD_CARD_SPI: Started writing to file: /data/data9.bin[0m
+[0;31mE (3710) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x109, status 0x0[0m
+[0;31mE (3710) diskio_sdmmc: sdmmc_write_blocks failed (265)[0m
+[0;31mE (3714) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (3912) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4172) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4247) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4422) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4682) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4747) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4932) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5187) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5442) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5507) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5702) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5952) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6037) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6207) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6462) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6537) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6732) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6987) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7087) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7242) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;32mI (7405) MAIN: Recording: OFF[0m
+[0;31mE (7413) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7414) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;32mI (7419) SD_CARD_SPI: File closed[0m
+[0;31mE (7807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7812) MAIN: audio full sd_record_queue[0m
+[0;31mE (7817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7842) MAIN: audio full sd_record_queue[0m
+[0;31mE (7847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7868) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7872) MAIN: audio full sd_record_queue[0m
+[0;31mE (7877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7902) MAIN: audio full sd_record_queue[0m
+[0;31mE (7907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7947) MAIN: audio full sd_record_queue[0m
+[0;31mE (7977) MAIN: audio full sd_record_queue[0m
+[0;31mE (8007) MAIN: audio full sd_record_queue[0m
+[0;31mE (8037) MAIN: audio full sd_record_queue[0m
+[0;31mE (8067) MAIN: audio full sd_record_queue[0m
+[0;31mE (8097) MAIN: audio full sd_record_queue[0m
+[0;31mE (8127) MAIN: audio full sd_record_queue[0m
+[0;31mE (8172) MAIN: audio full sd_record_queue[0m
+[0;31mE (8202) MAIN: audio full sd_record_queue[0m
+[0;31mE (8232) MAIN: audio full sd_record_queue[0m
+[0;31mE (8262) MAIN: audio full sd_record_queue[0m
+[0;31mE (8276) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8279) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8292) MAIN: audio full sd_record_queue[0m
+[0;31mE (8297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8322) MAIN: audio full sd_record_queue[0m
+[0;31mE (8327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8352) MAIN: audio full sd_record_queue[0m
+[0;31mE (8357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8382) MAIN: audio full sd_record_queue[0m
+[0;31mE (8387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8427) MAIN: audio full sd_record_queue[0m
+[0;31mE (8437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8457) MAIN: audio full sd_record_queue[0m
+[0;31mE (8467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8487) MAIN: audio full sd_record_queue[0m
+[0;31mE (8488) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8517) MAIN: audio full sd_record_queue[0m
+[0;31mE (8527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8547) MAIN: audio full sd_record_queue[0m
+[0;31mE (8557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8577) MAIN: audio full sd_record_queue[0m
+[0;31mE (8587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8607) MAIN: audio full sd_record_queue[0m
+[0;31mE (8617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8652) MAIN: audio full sd_record_queue[0m
+[0;31mE (8657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8682) MAIN: audio full sd_record_queue[0m
+[0;31mE (8687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8697) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8712) MAIN: audio full sd_record_queue[0m
+[0;31mE (8717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8737) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8742) MAIN: audio full sd_record_queue[0m
+[0;31mE (8747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8772) MAIN: audio full sd_record_queue[0m
+[0;31mE (8777) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8802) MAIN: audio full sd_record_queue[0m
+[0;31mE (8807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8832) MAIN: audio full sd_record_queue[0m
+[0;31mE (8837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8862) MAIN: audio full sd_record_queue[0m
+[0;31mE (8867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8907) MAIN: audio full sd_record_queue[0m
+[0;31mE (8917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8938) MAIN: audio full sd_record_queue[0m
+[0;31mE (8967) MAIN: audio full sd_record_queue[0m
+[0;31mE (8997) MAIN: audio full sd_record_queue[0m
+[0;31mE (9027) MAIN: audio full sd_record_queue[0m
+[0;31mE (9057) MAIN: audio full sd_record_queue[0m
+[0;31mE (9058) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9060) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9087) MAIN: audio full sd_record_queue[0m
+[0;31mE (9088) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9132) MAIN: audio full sd_record_queue[0m
+[0;31mE (9137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9157) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9162) MAIN: audio full sd_record_queue[0m
+[0;31mE (9167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9177) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9187) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9192) MAIN: audio full sd_record_queue[0m
+[0;31mE (9197) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9217) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9222) MAIN: audio full sd_record_queue[0m
+[0;31mE (9227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9247) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9252) MAIN: audio full sd_record_queue[0m
+[0;31mE (9257) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9282) MAIN: audio full sd_record_queue[0m
+[0;31mE (9287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9312) MAIN: audio full sd_record_queue[0m
+[0;31mE (9317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9342) MAIN: audio full sd_record_queue[0m
+[0;31mE (9347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9387) MAIN: audio full sd_record_queue[0m
+[0;31mE (9397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9417) MAIN: audio full sd_record_queue[0m
+[0;31mE (9427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9447) MAIN: audio full sd_record_queue[0m
+[0;31mE (9457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9477) MAIN: audio full sd_record_queue[0m
+[0;31mE (9487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (9497) MAIN:  imupt full sd_record_queue[0m
+[0;32mI (9505) MAIN: Recording: ON[0m
+[0;31mE (9508) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9508) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9514) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9523) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9529) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (9537) MAIN: Failed to open data file[0m
+[0;31mE (9642) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9642) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9648) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9657) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9663) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (9671) MAIN: Failed to open data file[0m
+[0;31mE (9776) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9776) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9782) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9791) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9798) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (9805) MAIN: Failed to open data file[0m
+[0;31mE (9910) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9911) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9916) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (9926) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (9932) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (9940) MAIN: Failed to open data file[0m
+[0;31mE (10044) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10045) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10050) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10060) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10066) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (10074) MAIN: Failed to open data file[0m
+[0;31mE (10092) MAIN: audio full sd_record_queue[0m
+[0;31mE (10095) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10122) MAIN: audio full sd_record_queue[0m
+[0;31mE (10127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10152) MAIN: audio full sd_record_queue[0m
+[0;31mE (10157) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10177) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10179) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10181) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10187) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10197) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10203) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (10211) MAIN: Failed to open data file[0m
+[0;31mE (10216) MAIN: audio full sd_record_queue[0m
+[0;31mE (10221) MAIN: audio full sd_record_queue[0m
+[0;31mE (10227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10242) MAIN: audio full sd_record_queue[0m
+[0;31mE (10247) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10257) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10272) MAIN: audio full sd_record_queue[0m
+[0;31mE (10277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10302) MAIN: audio full sd_record_queue[0m
+[0;31mE (10307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10316) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10316) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10322) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10332) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10338) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (10346) MAIN: Failed to open data file[0m
+[0;31mE (10350) MAIN: audio full sd_record_queue[0m
+[0;31mE (10356) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10377) MAIN: audio full sd_record_queue[0m
+[0;31mE (10387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10407) MAIN: audio full sd_record_queue[0m
+[0;31mE (10417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10437) MAIN: audio full sd_record_queue[0m
+[0;31mE (10447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10450) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10453) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10460) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10474) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10478) MAIN: audio full sd_record_queue[0m
+[0;31mE (10480) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (10493) MAIN: Failed to open data file[0m
+[0;31mE (10497) MAIN: audio full sd_record_queue[0m
+[0;31mE (10502) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10509) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10527) MAIN: audio full sd_record_queue[0m
+[0;31mE (10537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10572) MAIN: audio full sd_record_queue[0m
+[0;31mE (10577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10597) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10598) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10603) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10613) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10619) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (10627) MAIN: Failed to open data file[0m
+[0;31mE (10632) MAIN: audio full sd_record_queue[0m
+[0;31mE (10636) MAIN: audio full sd_record_queue[0m
+[0;31mE (10641) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10662) MAIN: audio full sd_record_queue[0m
+[0;31mE (10667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10692) MAIN: audio full sd_record_queue[0m
+[0;31mE (10697) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10722) MAIN: audio full sd_record_queue[0m
+[0;31mE (10727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10732) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10732) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10740) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10750) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10756) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (10764) MAIN: Failed to open data file[0m
+[0;31mE (10768) MAIN: audio full sd_record_queue[0m
+[0;31mE (10774) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10782) MAIN: audio full sd_record_queue[0m
+[0;31mE (10787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10827) MAIN: audio full sd_record_queue[0m
+[0;31mE (10837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10857) MAIN: audio full sd_record_queue[0m
+[0;31mE (10867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10868) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10873) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10879) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (10889) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (10895) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (10903) MAIN: Failed to open data file[0m
+[0;31mE (10908) MAIN: audio full sd_record_queue[0m
+[0;31mE (10914) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10917) MAIN: audio full sd_record_queue[0m
+[0;31mE (10924) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10937) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (10948) MAIN: audio full sd_record_queue[0m
+[0;31mE (10977) MAIN: audio full sd_record_queue[0m
+[0;31mE (11007) MAIN: audio full sd_record_queue[0m
+[0;31mE (11008) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11011) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11017) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11027) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11033) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (11041) MAIN: Failed to open data file[0m
+[0;31mE (11052) MAIN: audio full sd_record_queue[0m
+[0;31mE (11062) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11064) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11082) MAIN: audio full sd_record_queue[0m
+[0;31mE (11087) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11112) MAIN: audio full sd_record_queue[0m
+[0;31mE (11117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11128) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11142) MAIN: audio full sd_record_queue[0m
+[0;31mE (11146) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11148) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11154) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11164) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11170) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (11178) MAIN: Failed to open data file[0m
+[0;31mE (11183) MAIN: audio full sd_record_queue[0m
+[0;31mE (11189) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11202) MAIN: audio full sd_record_queue[0m
+[0;31mE (11207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11217) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11232) MAIN: audio full sd_record_queue[0m
+[0;31mE (11237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11247) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11257) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11262) MAIN: audio full sd_record_queue[0m
+[0;31mE (11267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11283) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11283) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11289) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11299) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11305) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (11313) MAIN: Failed to open data file[0m
+[0;31mE (11318) MAIN: audio full sd_record_queue[0m
+[0;31mE (11324) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11328) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11334) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11337) MAIN: audio full sd_record_queue[0m
+[0;31mE (11347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11367) MAIN: audio full sd_record_queue[0m
+[0;31mE (11377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11397) MAIN: audio full sd_record_queue[0m
+[0;31mE (11407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11418) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11421) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11427) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11437) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11443) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (11451) MAIN: Failed to open data file[0m
+[0;31mE (11456) MAIN: audio full sd_record_queue[0m
+[0;31mE (11461) MAIN: audio full sd_record_queue[0m
+[0;31mE (11467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11487) MAIN: audio full sd_record_queue[0m
+[0;31mE (11497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11532) MAIN: audio full sd_record_queue[0m
+[0;31mE (11537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11556) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11556) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11562) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11572) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11578) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (11586) MAIN: Failed to open data file[0m
+[0;31mE (11590) MAIN: audio full sd_record_queue[0m
+[0;31mE (11595) MAIN: audio full sd_record_queue[0m
+[0;31mE (11601) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11622) MAIN: audio full sd_record_queue[0m
+[0;31mE (11627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11652) MAIN: audio full sd_record_queue[0m
+[0;31mE (11657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11682) MAIN: audio full sd_record_queue[0m
+[0;31mE (11687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11690) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11693) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11699) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11709) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11715) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (11723) MAIN: Failed to open data file[0m
+[0;31mE (11728) MAIN: audio full sd_record_queue[0m
+[0;31mE (11734) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11738) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11742) MAIN: audio full sd_record_queue[0m
+[0;31mE (11748) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11777) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11787) MAIN: audio full sd_record_queue[0m
+[0;31mE (11797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11817) MAIN: audio full sd_record_queue[0m
+[0;31mE (11827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11828) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11833) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11839) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11849) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11855) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (11863) MAIN: Failed to open data file[0m
+[0;31mE (11868) MAIN: audio full sd_record_queue[0m
+[0;31mE (11874) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11877) MAIN: audio full sd_record_queue[0m
+[0;31mE (11883) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11907) MAIN: audio full sd_record_queue[0m
+[0;31mE (11917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11937) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (11937) MAIN: audio full sd_record_queue[0m
+[0;31mE (11967) MAIN: audio full sd_record_queue[0m
+[0;31mE (11968) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11971) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11977) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (11987) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (11993) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12001) MAIN: Failed to open data file[0m
+[0;31mE (12012) MAIN: audio full sd_record_queue[0m
+[0;31mE (12022) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12024) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12037) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12042) MAIN: audio full sd_record_queue[0m
+[0;31mE (12047) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12057) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12067) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12072) MAIN: audio full sd_record_queue[0m
+[0;31mE (12077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12087) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12102) MAIN: audio full sd_record_queue[0m
+[0;31mE (12106) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12108) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12114) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12124) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12130) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12138) MAIN: Failed to open data file[0m
+[0;31mE (12143) MAIN: audio full sd_record_queue[0m
+[0;31mE (12150) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12162) MAIN: audio full sd_record_queue[0m
+[0;31mE (12167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12177) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12187) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12192) MAIN: audio full sd_record_queue[0m
+[0;31mE (12197) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12217) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12222) MAIN: audio full sd_record_queue[0m
+[0;31mE (12227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12243) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12243) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12249) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12259) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12265) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12273) MAIN: Failed to open data file[0m
+[0;31mE (12278) MAIN: audio full sd_record_queue[0m
+[0;31mE (12284) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12297) MAIN: audio full sd_record_queue[0m
+[0;31mE (12307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12327) MAIN: audio full sd_record_queue[0m
+[0;31mE (12337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12357) MAIN: audio full sd_record_queue[0m
+[0;31mE (12358) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12378) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12381) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12387) MAIN: audio full sd_record_queue[0m
+[0;31mE (12387) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12402) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12408) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12416) MAIN: Failed to open data file[0m
+[0;31mE (12421) MAIN: audio full sd_record_queue[0m
+[0;31mE (12425) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12431) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12447) MAIN: audio full sd_record_queue[0m
+[0;31mE (12457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12492) MAIN: audio full sd_record_queue[0m
+[0;31mE (12497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12521) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12522) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12527) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12537) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12543) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12551) MAIN: Failed to open data file[0m
+[0;31mE (12556) MAIN: audio full sd_record_queue[0m
+[0;31mE (12561) MAIN: audio full sd_record_queue[0m
+[0;31mE (12567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12582) MAIN: audio full sd_record_queue[0m
+[0;31mE (12587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12612) MAIN: audio full sd_record_queue[0m
+[0;31mE (12617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12642) MAIN: audio full sd_record_queue[0m
+[0;31mE (12647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12656) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12656) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12662) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12672) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12678) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12686) MAIN: Failed to open data file[0m
+[0;31mE (12690) MAIN: audio full sd_record_queue[0m
+[0;31mE (12696) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12702) MAIN: audio full sd_record_queue[0m
+[0;31mE (12707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12737) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12747) MAIN: audio full sd_record_queue[0m
+[0;31mE (12757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12777) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12777) MAIN: audio full sd_record_queue[0m
+[0;31mE (12787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12790) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12793) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12799) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12809) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12815) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12823) MAIN: Failed to open data file[0m
+[0;31mE (12828) MAIN: audio full sd_record_queue[0m
+[0;31mE (12834) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12837) MAIN: audio full sd_record_queue[0m
+[0;31mE (12843) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12867) MAIN: audio full sd_record_queue[0m
+[0;31mE (12877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12897) MAIN: audio full sd_record_queue[0m
+[0;31mE (12907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (12927) MAIN: audio full sd_record_queue[0m
+[0;31mE (12928) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12936) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12942) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (12952) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (12958) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (12966) MAIN: Failed to open data file[0m
+[0;31mE (12972) MAIN: audio full sd_record_queue[0m
+[0;31mE (13002) MAIN: audio full sd_record_queue[0m
+[0;31mE (13032) MAIN: audio full sd_record_queue[0m
+[0;31mE (13050) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13051) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13062) MAIN: audio full sd_record_queue[0m
+[0;31mE (13067) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13071) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (13073) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (13079) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (13089) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (13095) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (13103) MAIN: Failed to open data file[0m
+[0;31mE (13108) MAIN: audio full sd_record_queue[0m
+[0;31mE (13114) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13122) MAIN: audio full sd_record_queue[0m
+[0;31mE (13127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13152) MAIN: audio full sd_record_queue[0m
+[0;31mE (13157) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13177) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13182) MAIN: audio full sd_record_queue[0m
+[0;31mE (13187) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13197) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13208) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (13211) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (13217) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (13227) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (13233) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (13241) MAIN: Failed to open data file[0m
+[0;31mE (13246) MAIN: audio full sd_record_queue[0m
+[0;31mE (13252) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13257) MAIN: audio full sd_record_queue[0m
+[0;31mE (13267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13287) MAIN: audio full sd_record_queue[0m
+[0;31mE (13297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13317) MAIN: audio full sd_record_queue[0m
+[0;31mE (13327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13346) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (13346) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (13352) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (13362) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (13368) SD_CARD_SPI: Failed to open file for writing: /data/data1.bin (errno = 5)[0m
+[0;31mE (13376) MAIN: Failed to open data file[0m
+[0;31mE (13380) MAIN: audio full sd_record_queue[0m
+[0;31mE (13385) MAIN: audio full sd_record_queue[0m
+[0;31mE (13392) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13407) MAIN: audio full sd_record_queue[0m
+[0;31mE (13417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (13447) MAIN:  imupt 

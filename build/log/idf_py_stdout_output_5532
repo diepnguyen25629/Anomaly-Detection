@@ -1,0 +1,122 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fb60h ( 64352) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0001fb88 vaddr=3ffbdb60 size=00490h (  1168) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=284c4h (165060) map[0m
+[0;32mI (189) esp_image: segment 3: paddr=000484ec vaddr=3ffbdff0 size=03690h ( 13968) load[0m
+[0;32mI (195) esp_image: segment 4: paddr=0004bb84 vaddr=40080000 size=1067ch ( 67196) load[0m
+[0;32mI (230) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (230) boot: Disabling RNG early entropy source...[0m
+[0;32mI (241) cpu_start: Multicore app[0m
+[0;32mI (250) cpu_start: Pro cpu start user code[0m
+[0;32mI (250) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (251) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     main[0m
+[0;32mI (258) cpu_start: App version:      1[0m
+[0;32mI (263) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (269) cpu_start: ELF file SHA256:  2a4861df6...[0m
+[0;32mI (274) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (279) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (284) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (294) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (301) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFC2068 len 0001DF98 (119 KiB): DRAM[0m
+[0;32mI (313) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 4009067C len 0000F984 (62 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;33mW (341) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (354) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (365) coexist: coex firmware version: 994b23e[0m
+[0;32mI (371) main_task: Started on CPU0[0m
+[0;32mI (381) main_task: Calling app_main()[0m
+[0;32mI (381) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (381) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (391) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (441) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (491) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (501) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (501) MPU6500: Initializating MPU6500[0m
+[0;32mI (511) main_task: Returned from app_main()[0m
+[0;32mI (1451) MAIN: Recording: ON[0m
+[0;32mI (1491) SD_CARD_SPI: Started writing to file: /data/imupt6.csv[0m
+[0;31mE (2021) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd_send_status returned 0x107[0m
+[0;31mE (2021) diskio_sdmmc: sdmmc_write_blocks failed (263)[0m
+[0;32mI (5351) MAIN: Recording: OFF[0m
+[0;31mE (5361) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (5361) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;32mI (5361) SD_CARD_SPI: File closed[0m
+[0;32mI (6701) MAIN: Recording: ON[0m
+[0;31mE (6711) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (6711) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (6711) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (6721) MAIN: Failed to open imu file[0m
+[0;31mE (6821) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (6821) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (6821) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (6831) MAIN: Failed to open imu file[0m
+[0;31mE (6931) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (6931) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (6931) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (6941) MAIN: Failed to open imu file[0m
+[0;31mE (7041) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7041) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (7041) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (7051) MAIN: Failed to open imu file[0m
+[0;31mE (7151) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7151) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (7151) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (7161) MAIN: Failed to open imu file[0m
+[0;31mE (7261) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7261) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (7261) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (7271) MAIN: Failed to open imu file[0m
+[0;31mE (7371) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7371) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (7371) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (7381) MAIN: Failed to open imu file[0m
+[0;31mE (7481) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7481) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (7481) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (7491) MAIN: Failed to open imu file[0m
+[0;31mE (7591) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7591) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (7591) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (7601) MAIN: Failed to open imu file[0m
+[0;31mE (7701) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (7701) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (7701) SD_CARD_SPI: Failed to open file for writing: /data/imupt6.csv (errno = 5)[0m
+[0;31mE (7711) MAIN: Failed to open imu file[0m
+[0;32mI (7801) MAIN: Recording: OFF[0m

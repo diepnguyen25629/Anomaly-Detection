@@ -1,0 +1,531 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0544ch ( 21580) load[0m
+[0;32mI (460) esp_image: segment 4: paddr=0010ac34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (524) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (524) boot: Disabling RNG early entropy source...[0m
+[0;32mI (536) cpu_start: Multicore app[0m
+[0;32mI (545) cpu_start: Pro cpu start user code[0m
+[0;32mI (545) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (545) cpu_start: Application information:[0m
+[0;32mI (548) cpu_start: Project name:     main[0m
+[0;32mI (553) cpu_start: App version:      1[0m
+[0;32mI (557) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (563) cpu_start: ELF file SHA256:  fb9bae5bb...[0m
+[0;32mI (569) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (574) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (579) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (584) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (596) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFD0808 len 0000F7F8 (61 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (648) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (661) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (672) coexist: coex firmware version: 994b23e[0m
+[0;32mI (677) main_task: Started on CPU0[0m
+[0;32mI (687) main_task: Calling app_main()[0m
+[0;32mI (717) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (727) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (727) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (807) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1387) WIFI_UART: GAP event: 10[0m
+[0;32mI (1397) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1397) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1407) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1447) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1647) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1647) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1657) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1667) MPU6500: Initializating MPU6500[0m
+[0;32mI (1667) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1677) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1677) main_task: Returned from app_main()[0m
+[0;32mI (1797) BMP280: Initializating BMP280[0m
+[0;32mI (1907) MAIN: Initializating DS18B20[0m
+[0;32mI (2667) MAIN: Recording: ON[0m
+[0;32mI (2687) SD_CARD_SPI: Started writing to file: /data/audio12.bin[0m
+[0;31mE (2697) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (2697) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (2707) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (2707) MAIN: Failed to open imu file[0m
+[0;31mE (2747) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (2747) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (2747) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (2817) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (2817) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (2817) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (2827) MAIN: Failed to open imu file[0m
+[0;31mE (2837) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (2917) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (2927) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (2927) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (2927) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (2937) MAIN: Failed to open imu file[0m
+[0;31mE (3007) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3037) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3037) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3037) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (3047) MAIN: Failed to open imu file[0m
+[0;31mE (3097) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3147) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3147) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3147) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (3157) MAIN: Failed to open imu file[0m
+[0;31mE (3197) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3257) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3257) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3257) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (3267) MAIN: Failed to open imu file[0m
+[0;31mE (3287) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3367) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3367) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3367) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (3377) MAIN: Failed to open imu file[0m
+[0;31mE (3377) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3467) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3477) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3477) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3477) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (3487) MAIN: Failed to open imu file[0m
+[0;31mE (3567) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3597) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3597) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3597) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (3607) MAIN: Failed to open imu file[0m
+[0;31mE (3657) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (3707) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3707) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3707) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (3717) MAIN: Failed to open imu file[0m
+[0;31mE (3757) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;32mI (3767) MAIN: Recording: OFF[0m
+[0;31mE (3777) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3777) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;32mI (3777) SD_CARD_SPI: File closed[0m
+����������������������������������������������������������������[0;32mI (19367) MAIN: Recording: ON[0m
+[0;31mE (19377) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19377) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19377) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (19387) MAIN: Failed to open audio file[0m
+[0;31mE (19417) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19417) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19417) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (19427) MAIN: Failed to open imu file[0m
+[0;31mE (19487) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19487) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19487) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (19497) MAIN: Failed to open audio file[0m
+[0;31mE (19527) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19527) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19527) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (19537) MAIN: Failed to open imu file[0m
+[0;31mE (19597) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19597) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19597) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (19607) MAIN: Failed to open audio file[0m
+[0;31mE (19637) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19637) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19637) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (19647) MAIN: Failed to open imu file[0m
+[0;31mE (19707) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19707) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19707) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (19717) MAIN: Failed to open audio file[0m
+[0;31mE (19747) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19747) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19747) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (19757) MAIN: Failed to open imu file[0m
+[0;31mE (19817) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19817) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19817) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (19827) MAIN: Failed to open audio file[0m
+[0;31mE (19857) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19857) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19857) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (19867) MAIN: Failed to open imu file[0m
+[0;31mE (19927) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19927) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19927) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (19937) MAIN: Failed to open audio file[0m
+[0;31mE (19967) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (19967) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (19967) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (19977) MAIN: Failed to open imu file[0m
+[0;31mE (20037) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20037) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20037) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (20047) MAIN: Failed to open audio file[0m
+[0;31mE (20077) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20077) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20077) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (20087) MAIN: Failed to open imu file[0m
+[0;31mE (20147) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20147) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20147) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (20157) MAIN: Failed to open audio file[0m
+[0;31mE (20187) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20187) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20187) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (20197) MAIN: Failed to open imu file[0m
+[0;31mE (20257) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20257) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20257) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (20267) MAIN: Failed to open audio file[0m
+[0;31mE (20297) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20297) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20297) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (20307) MAIN: Failed to open imu file[0m
+[0;31mE (20367) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20367) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20367) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (20377) MAIN: Failed to open audio file[0m
+[0;31mE (20407) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20407) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20407) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (20417) MAIN: Failed to open imu file[0m
+[0;31mE (20477) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20477) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20477) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (20487) MAIN: Failed to open audio file[0m
+[0;31mE (20517) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20517) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20517) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (20527) MAIN: Failed to open imu file[0m
+[0;31mE (20587) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20587) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20587) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (20597) MAIN: Failed to open audio file[0m
+[0;31mE (20627) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20627) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20627) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (20637) MAIN: Failed to open imu file[0m
+[0;31mE (20697) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20697) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20697) SD_CARD_SPI: Failed to open file for writing: /data/audio12.bin (errno = 5)[0m
+[0;31mE (20707) MAIN: Failed to open audio file[0m
+[0;31mE (20737) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (20737) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (20737) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (20747) MAIN: Failed to open imu file[0m
+[0;32mI (20767) MAIN: Recording: OFF[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0544ch ( 21580) load[0m
+[0;32mI (460) esp_image: segment 4: paddr=0010ac34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (524) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (524) boot: Disabling RNG early entropy source...[0m
+[0;32mI (536) cpu_start: Multicore app[0m
+[0;32mI (545) cpu_start: Pro cpu start user code[0m
+[0;32mI (545) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (545) cpu_start: Application information:[0m
+[0;32mI (548) cpu_start: Project name:     main[0m
+[0;32mI (553) cpu_start: App version:      1[0m
+[0;32mI (557) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (563) cpu_start: ELF file SHA256:  fb9bae5bb...[0m
+[0;32mI (569) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (574) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (579) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (584) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (596) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFD0808 len 0000F7F8 (61 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (648) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (661) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (672) coexist: coex firmware version: 994b23e[0m
+[0;32mI (677) main_task: Started on CPU0[0m
+[0;32mI (687) main_task: Calling app_main()[0m
+[0;32mI (717) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (727) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (727) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1377) WIFI_UART: GAP event: 10[0m
+[0;32mI (1377) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1387) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1387) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1437) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1637) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1637) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1647) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1657) MPU6500: Initializating MPU6500[0m
+[0;32mI (1657) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1667) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1667) main_task: Returned from app_main()[0m
+[0;32mI (1787) BMP280: Initializating BMP280[0m
+[0;32mI (1897) MAIN: Initializating DS18B20[0m
+[0;32mI (4057) MAIN: Recording: ON[0m
+[0;31mE (4067) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4067) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4067) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4067) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4077) MAIN: Failed to open audio file[0m
+[0;31mE (4087) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4097) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4107) MAIN: Failed to open imu file[0m
+[0;31mE (4187) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4187) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4187) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4197) MAIN: Failed to open audio file[0m
+[0;31mE (4207) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4207) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4217) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4227) MAIN: Failed to open imu file[0m
+[0;31mE (4297) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4297) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4297) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4307) MAIN: Failed to open audio file[0m
+[0;31mE (4327) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4327) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4327) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4337) MAIN: Failed to open imu file[0m
+[0;31mE (4407) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4407) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4407) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4417) MAIN: Failed to open audio file[0m
+[0;31mE (4437) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4437) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4437) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4447) MAIN: Failed to open imu file[0m
+[0;31mE (4517) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4517) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4517) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4527) MAIN: Failed to open audio file[0m
+[0;31mE (4547) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4547) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4547) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4557) MAIN: Failed to open imu file[0m
+[0;31mE (4627) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4627) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4627) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4637) MAIN: Failed to open audio file[0m
+[0;31mE (4657) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4657) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4657) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4667) MAIN: Failed to open imu file[0m
+[0;31mE (4737) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4737) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4737) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4747) MAIN: Failed to open audio file[0m
+[0;31mE (4767) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4767) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4767) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4777) MAIN: Failed to open imu file[0m
+[0;31mE (4847) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4847) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4847) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4857) MAIN: Failed to open audio file[0m
+[0;31mE (4877) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4877) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4877) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4887) MAIN: Failed to open imu file[0m
+[0;31mE (4957) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4957) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4957) SD_CARD_SPI: Failed to open file for writing: /data/audio13.bin (errno = 5)[0m
+[0;31mE (4967) MAIN: Failed to open audio file[0m
+[0;31mE (4987) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4987) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4987) SD_CARD_SPI: Failed to open file for writing: /data/imupt12.bin (errno = 5)[0m
+[0;31mE (4997) MAIN: Failed to open imu file[0m
+[0;32mI (5057) MAIN: Recording: OFF[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0544ch ( 21580) load[0m
+[0;32mI (460) esp_image: segment 4: paddr=0010ac34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (524) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (524) boot: Disabling RNG early entropy source...[0m
+[0;32mI (536) cpu_start: Multicore app[0m
+[0;32mI (545) cpu_start: Pro cpu start user code[0m
+[0;32mI (545) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (545) cpu_start: Application information:[0m
+[0;32mI (548) cpu_start: Project name:     main[0m
+[0;32mI (553) cpu_start: App version:      1[0m
+[0;32mI (557) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (564) cpu_start: ELF file SHA256:  fb9bae5bb...[0m
+[0;32mI (569) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (574) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (579) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (584) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (596) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFD0808 len 0000F7F8 (61 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (648) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (661) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (672) coexist: coex firmware version: 994b23e[0m
+[0;32mI (677) main_task: Started on CPU0[0m
+[0;32mI (687) main_task: Calling app_main()[0m
+[0;32mI (717) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (727) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (727) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1377) WIFI_UART: GAP event: 10[0m
+[0;32mI (1387) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1397) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1397) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1437) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1627) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1627) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1637) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1647) MPU6500: Initializating MPU6500[0m
+[0;32mI (1657) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1657) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1667) main_task: Returned from app_main()[0m
+[0;32mI (1777) BMP280: Initializating BMP280[0m
+[0;32mI (1887) MAIN: Initializating DS18B20[0m
+[0;32mI (3497) MAIN: Recording: ON[0m
+[0;32mI (3527) SD_CARD_SPI: Started writing to file: /data/audio1.bin[0m
+[0;32mI (3567) SD_CARD_SPI: Started writing to file: /data/imupt1.bin[0m
+[0;31mE (16267) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd_send_status returned 0x107[0m
+[0;31mE (16267) diskio_sdmmc: sdmmc_write_blocks failed (263)[0m
+[0;31mE (16267) SD_CARD_SPI: Write error: expected 32, got 6, errno=5 (I/O error)[0m
+[0;31mE (16287) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (16287) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;31mE (16297) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (16387) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (16477) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (16567) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (16657) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (16747) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (16847) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (16937) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17027) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17127) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17217) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17307) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17397) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17497) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17587) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17687) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17777) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17867) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (17967) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (18057) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (18147) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (18237) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (18337) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;31mE (18427) SD_CARD_SPI: Write error: expected 4, got 0, errno=5 (I/O error)[0m
+[0;32mI (18497) MAIN: Recording: OFF[0m
+[0;31mE (18517) SD_CARD_SPI: Write error: expected 3, got 0, errno=5 (I/O error)[0m
+[0;31mE (18517) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (18517) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;32mI (18527) SD_CARD_SPI: File closed[0m
+[0;31mE (18577) SD_CARD_SPI: Write error: expected 22, got 0, errno=5 (I/O error)[0m
+[0;31mE (18577) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (18577) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;32mI (18587) SD_CARD_SPI: File closed[0m

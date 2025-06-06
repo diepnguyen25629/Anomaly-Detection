@@ -1,0 +1,27 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D F:\esp\Espressif\frameworks\fall_detection\build\bootloader\esp-idf\esptool_py && F:\esp\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 F:/esp/Espressif/frameworks/fall_detection/build/bootloader/bootloader.bin"
+Bootloader binary size 0x68b0 bytes. 0x750 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/calibration.c.obj
+F:/esp/Espressif/frameworks/fall_detection/main/calibration.c: In function 'write_imu_to_sd_task':
+F:/esp/Espressif/frameworks/fall_detection/main/calibration.c:149:45: warning: passing argument 2 of 'sd_spi_write_line' from incompatible pointer type [-Wincompatible-pointer-types]
+  149 |                 sd_spi_write_line(imu_file, &imu_data_recv);
+      |                                             ^~~~~~~~~~~~~~
+      |                                             |
+      |                                             imu_data_t *
+In file included from F:/esp/Espressif/frameworks/fall_detection/main/calibration.c:19:
+F:/esp/Espressif/frameworks/fall_detection/components/include/sd_card_spi.h:23:56: note: expected 'const char *' but argument is of type 'imu_data_t *'
+   23 | esp_err_t sd_spi_write_line(FILE *sd_file, const char *line);
+      |                                            ~~~~~~~~~~~~^~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable main.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated F:/esp/Espressif/frameworks/fall_detection/build/main.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D F:\esp\Espressif\frameworks\fall_detection\build\esp-idf\esptool_py && F:\esp\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app F:/esp/Espressif/frameworks/fall_detection/build/partition_table/partition-table.bin F:/esp/Espressif/frameworks/fall_detection/build/main.bin"
+main.bin binary size 0x37a40 bytes. Smallest app partition is 0x180000 bytes. 0x1485c0 bytes (86%) free.

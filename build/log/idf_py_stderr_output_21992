@@ -1,0 +1,142 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83d8: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:331
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d84be: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:370
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83db: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:331
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83db: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:331
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840c: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d8406: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:336
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840c: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83de: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:331
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83db: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:331
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d84c7: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:373
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83db: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:331
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83db: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:331
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d84be: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:370
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d840f: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:340
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d8406: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:336
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83d2: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:323
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83d2: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:323
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d84c7: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:373
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83d2: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:323
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40086f96: esp_crosscore_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:103
+0x40083fed: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d83d2: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:323
+0x40092a0d: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

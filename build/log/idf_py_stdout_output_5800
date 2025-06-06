@@ -1,0 +1,262 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  4 2025 06:21:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2dfe0h (188384) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e008 vaddr=3ffbdb60 size=02010h (  8208) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c56a0h (808608) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001056c8 vaddr=3ffbfb70 size=08d6ch ( 36204) load[0m
+[0;32mI (466) esp_image: segment 4: paddr=0010e43c vaddr=40080000 size=1e030h (122928) load[0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (531) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+[0;32mI (551) cpu_start: Pro cpu start user code[0m
+[0;32mI (551) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (551) cpu_start: Application information:[0m
+[0;32mI (554) cpu_start: Project name:     main[0m
+[0;32mI (559) cpu_start: App version:      1[0m
+[0;32mI (564) cpu_start: Compile time:     Jun  4 2025 06:21:57[0m
+[0;32mI (570) cpu_start: ELF file SHA256:  95a2055de...[0m
+[0;32mI (575) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (580) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (585) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (590) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (595) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (602) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFD1BA8 len 0000E458 (57 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 4009E030 len 00001FD0 (7 KiB): IRAM[0m
+[0;32mI (647) spi_flash: detected chip: generic[0m
+[0;32mI (650) spi_flash: flash io: dio[0m
+[0;33mW (654) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (667) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (678) coexist: coex firmware version: 994b23e[0m
+[0;32mI (684) main_task: Started on CPU0[0m
+[0;32mI (688) main_task: Calling app_main()[0m
+[0;32mI (727) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (732) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (816) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1426) WIFI_UART: GAP event: 10[0m
+[0;32mI (1433) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1438) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1443) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1445) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1492) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1546) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1555) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1564) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1575) MPU6500: Initializating MPU6500[0m
+[0;32mI (1580) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1584) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1589) main_task: Returned from app_main()[0m
+[0;32mI (1709) BMP280: Initializating BMP280[0m
+[0;32mI (1821) DS18B20_1_WIRE: Initializating DS18B20[0m
+[0;31mE (2185) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2195) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2195) MAIN: audio full sd_record_queue[0m
+[0;31mE (2205) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2215) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2225) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2225) MAIN: audio full sd_record_queue[0m
+[0;31mE (2235) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2245) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2255) MAIN: audio full sd_record_queue[0m
+[0;31mE (2256) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2265) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2275) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2285) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2285) MAIN: audio full sd_record_queue[0m
+[0;31mE (2295) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2305) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2315) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2325) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2330) MAIN: audio full sd_record_queue[0m
+[0;31mE (2335) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2345) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2355) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2360) MAIN: audio full sd_record_queue[0m
+[0;31mE (2365) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2375) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2385) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2390) MAIN: audio full sd_record_queue[0m
+[0;31mE (2395) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2405) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2415) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2420) MAIN: audio full sd_record_queue[0m
+[0;31mE (2425) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2435) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2445) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2450) MAIN: audio full sd_record_queue[0m
+[0;31mE (2455) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2465) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2475) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2480) MAIN: audio full sd_record_queue[0m
+[0;31mE (2485) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2495) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2505) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2510) MAIN: audio full sd_record_queue[0m
+[0;31mE (2515) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2525) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2535) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2540) MAIN: audio full sd_record_queue[0m
+[0;31mE (2545) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2555) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2565) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2575) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2585) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2585) MAIN: audio full sd_record_queue[0m
+[0;31mE (2595) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2605) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2615) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2615) MAIN: audio full sd_record_queue[0m
+[0;31mE (2625) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2635) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2645) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2645) MAIN: audio full sd_record_queue[0m
+[0;31mE (2655) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2665) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2675) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2675) MAIN: audio full sd_record_queue[0m
+[0;31mE (2685) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2695) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2705) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2705) MAIN: audio full sd_record_queue[0m
+[0;31mE (2715) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2725) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2735) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2735) MAIN: audio full sd_record_queue[0m
+[0;31mE (2745) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2755) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2765) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2765) MAIN: audio full sd_record_queue[0m
+[0;31mE (2775) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2785) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2795) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2805) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2810) MAIN: audio full sd_record_queue[0m
+[0;31mE (2815) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2825) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2835) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2840) MAIN: audio full sd_record_queue[0m
+[0;31mE (2845) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2870) MAIN: audio full sd_record_queue[0m
+[0;31mE (2886) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2888) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2900) MAIN: audio full sd_record_queue[0m
+[0;31mE (2905) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2915) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2925) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2930) MAIN: audio full sd_record_queue[0m
+[0;31mE (2935) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2945) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2955) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2960) MAIN: audio full sd_record_queue[0m
+[0;31mE (2965) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2975) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2985) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2990) MAIN: audio full sd_record_queue[0m
+[0;31mE (2995) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3005) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3015) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3020) MAIN: audio full sd_record_queue[0m
+[0;32mI (3023) MAIN: Recording: ON[0m
+[0;32mI (3049) SD_CARD_SPI: Started writing to file: /data/data10.bin[0m
+[0;31mE (4680) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd_send_status returned 0x107[0m
+[0;31mE (4681) diskio_sdmmc: sdmmc_write_blocks failed (263)[0m
+[0;31mE (4684) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4779) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4946) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5013) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5080) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5330) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5495) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5590) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5840) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6100) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6107) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6350) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6605) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6612) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (6860) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7125) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7132) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7390) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7625) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7640) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (7895) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (8150) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (8176) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (8410) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (8660) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (8675) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (8915) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (9170) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (9245) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (9430) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (9680) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (9745) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (9935) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (10190) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (10335) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (10450) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (10700) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (10835) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (10970) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (11230) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (11465) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (11480) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (11740) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (11990) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (12015) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (12250) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (12500) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (12515) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (12760) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (13010) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (13185) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (13270) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (13520) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (13685) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (13780) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (14030) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (14290) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (14375) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (14540) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (14810) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (15035) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (15070) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (15320) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (15535) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (15580) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m

@@ -1,0 +1,20 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400f25da: hash_map_set at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/bt/common/osi/hash_map.c:129 (discriminator 1)
+0x400f569d: bta_sys_start_timer at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/bt/host/bluedroid/bta/sys/bta_sys_main.c:606 (discriminator 1)
+0x40103244: bta_dm_disable at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/bt/host/bluedroid/bta/dm/bta_dm_act.c:611
+0x400f3aa9: bta_dm_sm_execute at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/bt/host/bluedroid/bta/dm/bta_dm_main.c:468
+0x400f54e1: bta_sys_event at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/bt/host/bluedroid/bta/sys/bta_sys_main.c:499
+0x400f2eaf: osi_thread_run at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/bt/common/osi/thread.c:165
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

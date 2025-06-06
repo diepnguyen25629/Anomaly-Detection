@@ -1,0 +1,81 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bba: panic_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/panic.c:466
+0x40091e45: esp_system_abort at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/esp_system_chip.c:93
+0x40099c4d: __assert_func at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/newlib/assert.c:81
+0x400922bb: xQueueGenericSend at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/queue.c:936 (discriminator 1)
+0x400d83b6: read_audio_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:292
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

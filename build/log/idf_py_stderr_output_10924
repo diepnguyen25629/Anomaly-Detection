@@ -1,0 +1,30 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4000c320: memcpy in ROM
+[0m
+[0;33m--- 0x4000c544: strchr in ROM
+[0m
+[0;33m--- 0x4000c544: strchr in ROM
+0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m--- 0x4000c31d: memcpy in ROM
+0x401246b1: tcp_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/core/tcp_out.c:616
+0x4012f156: lwip_netconn_do_writemore at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/api/api_msg.c:1794
+0x4012f4dd: sent_tcp at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/api/api_msg.c:417
+0x40123dae: tcp_input at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/core/tcp_in.c:479 (discriminator 1)
+0x4012908a: ip4_input at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/core/ipv4/ip4.c:752
+0x4012dbb6: ethernet_input at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/netif/ethernet.c:186
+0x4011e849: tcpip_thread_handle_msg at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/api/tcpip.c:174
+0x4011e8cc: tcpip_thread at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/lwip/lwip/src/api/tcpip.c:148
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

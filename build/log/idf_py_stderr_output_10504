@@ -1,0 +1,33 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d260b: panic_handler at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/panic_handler.c:147 (discriminator 1)
+[0m
+[0;33m--- 0x400803c3: _DoubleExceptionVector at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:566
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d260b: panic_handler at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/panic_handler.c:147 (discriminator 1)
+[0m
+[0;33m--- 0x400803c0: _DoubleExceptionVector at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:564
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d260b: panic_handler at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/panic_handler.c:147 (discriminator 1)
+[0m
+[0;33m--- 0x400803c0: _DoubleExceptionVector at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:564
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d260b: panic_handler at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/port/panic_handler.c:147 (discriminator 1)
+[0m
+[0;33m--- 0x400803c0: _DoubleExceptionVector at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:564
+[0m
+[0m

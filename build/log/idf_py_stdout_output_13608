@@ -1,0 +1,2066 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (586) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (604) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (719) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1409) WIFI_UART: GAP event: 10[0m
+[0;32mI (1419) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1419) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1429) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1429) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1469) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1529) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) MPU6500: Initializating MPU6500[0m
+[0;32mI (1559) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1559) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1369) WIFI_UART: GAP event: 10[0m
+[0;32mI (1369) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1379) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1379) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1379) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1429) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1489) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1489) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) MPU6500: Initializating MPU6500[0m
+[0;32mI (1519) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1519) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1399) WIFI_UART: GAP event: 10[0m
+[0;32mI (1409) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1419) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1419) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1469) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1529) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) MPU6500: Initializating MPU6500[0m
+[0;32mI (1559) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1559) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1349) WIFI_UART: GAP event: 10[0m
+[0;32mI (1359) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1359) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1369) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1369) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1409) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1469) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1469) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1479) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1489) MPU6500: Initializating MPU6500[0m
+[0;32mI (1499) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1499) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1419) WIFI_UART: GAP event: 10[0m
+[0;32mI (1419) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1429) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1429) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1439) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1479) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1539) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1559) MPU6500: Initializating MPU6500[0m
+[0;32mI (1569) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1569) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (719) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1399) WIFI_UART: GAP event: 10[0m
+[0;32mI (1399) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1409) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1419) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1459) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1519) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) MPU6500: Initializating MPU6500[0m
+[0;32mI (1549) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1549) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (586) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (719) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1369) WIFI_UART: GAP event: 10[0m
+[0;32mI (1369) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1379) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1379) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1389) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1429) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1489) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1489) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) MPU6500: Initializating MPU6500[0m
+[0;32mI (1519) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1519) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (719) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1419) WIFI_UART: GAP event: 10[0m
+[0;32mI (1429) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1429) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1439) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1439) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1489) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1549) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1559) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1569) MPU6500: Initializating MPU6500[0m
+[0;32mI (1579) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1579) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1359) WIFI_UART: GAP event: 10[0m
+[0;32mI (1359) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1369) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1369) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1369) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1419) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1479) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1479) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1489) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) MPU6500: Initializating MPU6500[0m
+[0;32mI (1509) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1509) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1399) WIFI_UART: GAP event: 10[0m
+[0;32mI (1409) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1409) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1419) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1459) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1519) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) MPU6500: Initializating MPU6500[0m
+[0;32mI (1549) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1549) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1419) WIFI_UART: GAP event: 10[0m
+[0;32mI (1429) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1429) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1439) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1439) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1479) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1539) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1559) MPU6500: Initializating MPU6500[0m
+[0;32mI (1569) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1569) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (719) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1409) WIFI_UART: GAP event: 10[0m
+[0;32mI (1409) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1419) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1419) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1429) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1469) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1529) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) MPU6500: Initializating MPU6500[0m
+[0;32mI (1559) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1559) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1379) WIFI_UART: GAP event: 10[0m
+[0;32mI (1379) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1389) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1389) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1399) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1439) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1499) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) MPU6500: Initializating MPU6500[0m
+[0;32mI (1529) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1529) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1379) WIFI_UART: GAP event: 10[0m
+[0;32mI (1379) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1389) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1399) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1399) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1439) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1499) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) MPU6500: Initializating MPU6500[0m
+[0;32mI (1529) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1529) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (586) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1369) WIFI_UART: GAP event: 10[0m
+[0;32mI (1369) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1379) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1379) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1389) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1429) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1489) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1489) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) MPU6500: Initializating MPU6500[0m
+[0;32mI (1519) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1519) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1399) WIFI_UART: GAP event: 10[0m
+[0;32mI (1409) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1419) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1419) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1419) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1469) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1529) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) MPU6500: Initializating MPU6500[0m
+[0;32mI (1559) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1559) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1419) WIFI_UART: GAP event: 10[0m
+[0;32mI (1419) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1429) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1429) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1439) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1479) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1539) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1559) MPU6500: Initializating MPU6500[0m
+[0;32mI (1569) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1569) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (719) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1389) WIFI_UART: GAP event: 10[0m
+[0;32mI (1399) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1399) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1409) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1409) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1459) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1519) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) MPU6500: Initializating MPU6500[0m
+[0;32mI (1549) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1549) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (586) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (719) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1409) WIFI_UART: GAP event: 10[0m
+[0;32mI (1419) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1429) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1429) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1429) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1479) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1539) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1539) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1549) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1559) MPU6500: Initializating MPU6500[0m
+[0;32mI (1569) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1569) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1389) WIFI_UART: GAP event: 10[0m
+[0;32mI (1389) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1399) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1399) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1409) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1449) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1509) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1529) MPU6500: Initializating MPU6500[0m
+[0;32mI (1539) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1539) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1369) WIFI_UART: GAP event: 10[0m
+[0;32mI (1379) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1389) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1389) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1389) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1439) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1499) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) MPU6500: Initializating MPU6500[0m
+[0;32mI (1529) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1529) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057e0 vaddr=3ffbfbe0 size=0644ch ( 25676) load[0m
+[0;32mI (462) esp_image: segment 4: paddr=0010bc34 vaddr=40080000 size=1e044h (122948) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (538) cpu_start: Multicore app[0m
+[0;32mI (547) cpu_start: Pro cpu start user code[0m
+[0;32mI (547) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (547) cpu_start: Application information:[0m
+[0;32mI (550) cpu_start: Project name:     main[0m
+[0;32mI (555) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  468c8a29c...[0m
+[0;32mI (571) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (576) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (581) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (586) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (591) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (598) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (610) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (616) heap_init: At 3FFD1818 len 0000E7E8 (57 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (635) heap_init: At 4009E044 len 00001FBC (7 KiB): IRAM[0m
+[0;32mI (642) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (663) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (674) coexist: coex firmware version: 994b23e[0m
+[0;32mI (679) main_task: Started on CPU0[0m
+[0;32mI (689) main_task: Calling app_main()[0m
+[0;32mI (719) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1369) WIFI_UART: GAP event: 10[0m
+[0;32mI (1379) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1379) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1389) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1389) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1439) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1499) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1499) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1509) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1519) MPU6500: Initializating MPU6500[0m
+[0;32mI (1529) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1529) MAIN:
+***ERROR*** A stack overflow in task ReadAudio has been detected.
+
+
+Backtrace: 0x40081bc6:0x3fff43f0 0x40091e51:0x3fff4410 0x40092e0a:0x3fff4430 0x40094103:0x3fff44b0 0x40092f14:0x3fff44d0 0x40092ec6:0x00000042 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 468c8a29c
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df70h (188272) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df98 vaddr=3ffbdb60 size=02080h (  8320) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57b8h (808888) map[0m

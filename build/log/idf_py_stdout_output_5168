@@ -1,0 +1,143 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  4 2025 06:21:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2dfb0h (188336) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003dfd8 vaddr=3ffbdb60 size=02040h (  8256) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57ech (808940) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=00105814 vaddr=3ffbfba0 size=04bcch ( 19404) load[0m
+[0;32mI (460) esp_image: segment 4: paddr=0010a3e8 vaddr=40080000 size=1e030h (122928) load[0m
+[0;32mI (523) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (535) cpu_start: Multicore app[0m
+[0;32mI (544) cpu_start: Pro cpu start user code[0m
+[0;32mI (544) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (544) cpu_start: Application information:[0m
+[0;32mI (547) cpu_start: Project name:     main[0m
+[0;32mI (552) cpu_start: App version:      1[0m
+[0;32mI (557) cpu_start: Compile time:     Jun  4 2025 06:21:57[0m
+[0;32mI (563) cpu_start: ELF file SHA256:  dc27bf61f...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (613) heap_init: At 3FFD2A40 len 0000D5C0 (53 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 4009E030 len 00001FD0 (7 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (647) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (660) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (671) coexist: coex firmware version: 994b23e[0m
+[0;32mI (677) main_task: Started on CPU0[0m
+[0;32mI (681) main_task: Calling app_main()[0m
+[0;32mI (720) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (722) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (725) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1387) WIFI_UART: GAP event: 10[0m
+[0;32mI (1393) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1397) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1404) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1447) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1623) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1624) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1631) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1642) MPU6500: Initializating MPU6500[0m
+[0;32mI (1647) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1651) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1656) main_task: Returned from app_main()[0m
+[0;32mI (1777) BMP280: Initializating BMP280[0m
+[0;32mI (1889) MAIN: Initializating DS18B20[0m
+[0;32mI (45590) MAIN: Recording: ON[0m
+[0;32mI (45605) SD_CARD_SPI: Started writing to file: /data/data12.bin[0m
+[0;32mI (300643) MAIN: Cycling file: flushing and reopening to prevent data loss[0m
+����������������������������������������������������������������32mI (600646) MAIN: Cycling file: flushing and reopening to prevent data loss[0m
+[0;31mE (701295) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd_send_status returned 0x107[0m
+[0;31mE (701295) diskio_sdmmc: sdmmc_write_blocks failed (263)[0m
+[0;31mE (701299) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (701476) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (701671) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (701853) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (701868) SD_CARD_SPI: Write error: expected 128, got 0, errno=5 (I/O error)[0m
+[0;31mE (702038) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (702223) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (702409) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (702594) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (702780) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (702965) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (703160) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (703183) SD_CARD_SPI: Write error: expected 128, got 0, errno=5 (I/O error)[0m
+[0;31mE (703342) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (703527) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (703713) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (703898) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (704084) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (704269) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (704463) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (704497) SD_CARD_SPI: Write error: expected 128, got 0, errno=5 (I/O error)[0m
+[0;31mE (704645) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (704831) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (705016) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (705202) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (705387) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (705573) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (705758) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (705812) SD_CARD_SPI: Write error: expected 128, got 0, errno=5 (I/O error)[0m
+[0;31mE (705952) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (706134) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (706320) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (706505) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (706691) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (706876) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (707062) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (707126) SD_CARD_SPI: Write error: expected 128, got 0, errno=5 (I/O error)[0m
+[0;31mE (707256) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (707438) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (707624) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (707809) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (707994) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (708180) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (708365) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (708441) SD_CARD_SPI: Write error: expected 128, got 0, errno=5 (I/O error)[0m
+[0;31mE (708551) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (708745) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;32mI (708847) MAIN: Recording: OFF[0m
+[0;31mE (708850) SD_CARD_SPI: Write error: expected 39, got 0, errno=5 (I/O error)[0m
+[0;31mE (708850) SD_CARD_SPI: Write error: expected 9, got 0, errno=5 (I/O error)[0m
+[0;31mE (708855) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (708865) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;32mI (708871) SD_CARD_SPI: File closed[0m

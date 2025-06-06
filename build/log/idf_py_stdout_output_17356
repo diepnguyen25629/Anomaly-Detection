@@ -1,0 +1,445 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  4 2025 06:21:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2dfb0h (188336) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003dfd8 vaddr=3ffbdb60 size=02040h (  8256) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57ech (808940) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=00105814 vaddr=3ffbfba0 size=04bcch ( 19404) load[0m
+[0;32mI (460) esp_image: segment 4: paddr=0010a3e8 vaddr=40080000 size=1e030h (122928) load[0m
+[0;32mI (523) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (535) cpu_start: Multicore app[0m
+[0;32mI (544) cpu_start: Pro cpu start user code[0m
+[0;32mI (544) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (544) cpu_start: Application information:[0m
+[0;32mI (547) cpu_start: Project name:     main[0m
+[0;32mI (552) cpu_start: App version:      1[0m
+[0;32mI (557) cpu_start: Compile time:     Jun  4 2025 06:21:57[0m
+[0;32mI (563) cpu_start: ELF file SHA256:  c7550ac3d...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (613) heap_init: At 3FFD23A0 len 0000DC60 (55 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 4009E030 len 00001FD0 (7 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (647) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (660) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (671) coexist: coex firmware version: 994b23e[0m
+[0;32mI (677) main_task: Started on CPU0[0m
+[0;32mI (681) main_task: Calling app_main()[0m
+[0;32mI (720) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (722) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (725) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1403) WIFI_UART: GAP event: 10[0m
+[0;32mI (1410) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1414) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1421) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1464) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1651) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1652) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1659) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1670) MPU6500: Initializating MPU6500[0m
+[0;32mI (1675) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1679) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1684) main_task: Returned from app_main()[0m
+[0;32mI (1804) BMP280: Initializating BMP280[0m
+[0;32mI (1916) MAIN: Initializating DS18B20[0m
+[0;32mI (4469) MAIN: Recording: ON[0m
+[0;32mI (4488) SD_CARD_SPI: Started writing to file: /data/data13.bin[0m
+[0;31mE (91253) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd_send_status returned 0x107[0m
+[0;31mE (91254) diskio_sdmmc: sdmmc_write_blocks failed (263)[0m
+[0;31mE (91257) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (91435) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (91621) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (91749) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (91806) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (92001) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (92183) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (92368) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (92524) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (92554) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (92739) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (92924) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (93110) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (93289) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (93295) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (93490) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (93672) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (93857) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (94043) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (94058) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (94228) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (94414) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (94599) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (94793) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (94827) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (94976) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (95161) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (95346) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (95532) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (95597) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (95717) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (95903) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (96088) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (96282) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (96369) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (96465) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (96650) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (96835) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (97021) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (97140) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (97206) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (97392) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (97586) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (97768) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (97909) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (97953) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (98139) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (98324) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (98510) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (98678) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (98695) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (98881) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (99075) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (99257) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (99443) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (99448) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (99628) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (99814) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (99999) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (100184) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (100217) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (100379) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (100561) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (100746) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (100932) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (100996) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (101117) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (101303) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (101488) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (101674) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (101760) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (101868) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (102050) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (102235) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (102421) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (102529) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (102606) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (102792) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (102977) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (103172) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (103298) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (103354) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (103539) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (103724) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (103910) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (104067) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (104095) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (104281) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (104466) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (104661) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (104840) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (104843) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (105028) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (105214) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (105399) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (105585) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (105615) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (105770) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (105964) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (106146) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (106332) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (106381) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (106517) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (106703) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (106888) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (107074) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (107149) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (107259) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (107453) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (107635) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (107821) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (107918) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (108006) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (108192) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (108377) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (108563) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (108687) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (108757) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (108939) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (109124) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (109310) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (109460) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (109495) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (109681) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (109866) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (110052) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (110231) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (110246) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (110428) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (110614) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (110799) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (110985) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (111000) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (111170) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (111355) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (111550) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (111732) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (111769) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (111918) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (112103) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (112288) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (112474) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (112538) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (112659) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (112844) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (113039) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (113221) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (113307) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (113406) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (113592) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (113777) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (113963) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (114086) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (114148) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (114342) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (114525) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (114710) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (114851) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (114895) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (115081) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (115266) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (115452) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (115620) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (115637) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (115832) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (116014) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (116199) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (116385) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (116390) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (116570) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (116755) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (116941) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (117135) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (117158) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (117317) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (117503) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (117688) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (117874) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (117931) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (118059) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (118244) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (118430) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (118624) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (118706) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (118806) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (118992) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (119177) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (119363) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (119471) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (119548) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (119734) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (119928) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (120110) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (120240) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (120295) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (120481) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (120666) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (120852) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (121009) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (121037) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (121223) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (121417) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (121599) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (121778) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (121784) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (121970) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (122155) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (122341) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (122526) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (122552) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (122721) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (122903) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (123088) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (123274) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (123322) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (123459) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (123645) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (123830) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (124015) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (124091) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (124210) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (124392) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (124577) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (124763) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (124860) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (124948) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (125134) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (125319) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (125513) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (125629) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (125695) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (125881) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (126066) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (126252) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (126398) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (126437) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (126623) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (126808) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (127002) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (127177) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (127184) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (127370) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (127555) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (127741) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (127926) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (127942) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (128112) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (128306) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (128488) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (128674) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (128711) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (128859) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (129044) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (129230) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (129415) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (129480) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (129601) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (129795) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (129977) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (130163) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (130249) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (130348) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (130534) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (130719) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (130904) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (131022) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (131099) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (131281) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (131466) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (131652) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (131797) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (131837) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (132023) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (132208) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (132394) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (132562) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (132588) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (132770) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (132955) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (133141) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (133326) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (133332) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (133512) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (133697) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (133892) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (134074) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (134100) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (134259) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (134444) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (134630) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (134815) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (134869) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (135001) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (135186) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (135381) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (135563) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (135642) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (135748) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (135934) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (136119) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (136305) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (136413) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (136490) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (136684) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (136866) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (137052) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (137182) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (137237) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (137423) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (137608) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (137794) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (137951) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (137979) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (138173) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (138355) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (138541) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (138720) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (138726) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (138912) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (139097) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (139283) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (139477) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (139489) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (139659) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (139845) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (140030) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (140215) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (140268) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (140401) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (140586) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (140772) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (140966) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (141033) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (141148) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (141334) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (141519) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (141705) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (141802) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (141890) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (142075) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (142270) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (142452) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (142571) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (142637) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (142823) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (143008) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (143194) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (143340) SD_CARD_SPI: Write error: expected 75, got 0, errno=5 (I/O error)[0m
+[0;31mE (143379) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (143564) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;31mE (143759) SD_CARD_SPI: Write error: expected 16, got 0, errno=5 (I/O error)[0m
+[0;32mI (143870) MAIN: Recording: OFF[0m
+[0;31mE (143875) SD_CARD_SPI: Write error: expected 51, got 0, errno=5 (I/O error)[0m
+[0;31mE (143875) SD_CARD_SPI: Write error: expected 10, got 0, errno=5 (I/O error)[0m
+[0;31mE (143881) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (143891) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;32mI (143897) SD_CARD_SPI: File closed[0m

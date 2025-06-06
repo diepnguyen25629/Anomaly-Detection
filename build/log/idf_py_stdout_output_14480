@@ -1,0 +1,34 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D F:\esp\Espressif\frameworks\fall_detection\build\bootloader\esp-idf\esptool_py && F:\esp\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 F:/esp/Espressif/frameworks/fall_detection/build/bootloader/bootloader.bin"
+Bootloader binary size 0x68b0 bytes. 0x750 bytes (7%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main1.c.obj
+F:/esp/Espressif/frameworks/fall_detection/main/main1.c: In function 'read_imupt_task':
+F:/esp/Espressif/frameworks/fall_detection/main/main1.c:243:32: warning: taking address of packed member of 'struct <anonymous>' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  243 |             if (get_accel_gyro(&imupt_data.accel_data, &imupt_data.gyro_data) == ESP_OK)
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+F:/esp/Espressif/frameworks/fall_detection/main/main1.c:243:56: warning: taking address of packed member of 'struct <anonymous>' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  243 |             if (get_accel_gyro(&imupt_data.accel_data, &imupt_data.gyro_data) == ESP_OK)
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~
+F:/esp/Espressif/frameworks/fall_detection/main/main1.c:253:33: warning: taking address of packed member of 'struct <anonymous>' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  253 |             if (bmp280_read_pre(&imupt_data.pre_data) == ESP_OK)
+      |                                 ^~~~~~~~~~~~~~~~~~~~
+F:/esp/Espressif/frameworks/fall_detection/main/main1.c:263:47: warning: taking address of packed member of 'struct <anonymous>' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  263 |             if (ds18b20_getTempC(&sensorAddr, &imupt_data.temp_data) == ESP_OK)
+      |                                               ^~~~~~~~~~~~~~~~~~~~~
+F:/esp/Espressif/frameworks/fall_detection/main/main1.c: In function 'read_audio_task':
+F:/esp/Espressif/frameworks/fall_detection/main/main1.c:303:48: warning: taking address of packed member of 'struct <anonymous>' may result in an unaligned pointer value [-Waddress-of-packed-member]
+  303 |         int bytes = inmp441_i2s_read(audio_data.audio_buf, sizeof(audio_data.audio_buf));
+      |                                      ~~~~~~~~~~^~~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable main.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated F:/esp/Espressif/frameworks/fall_detection/build/main.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D F:\esp\Espressif\frameworks\fall_detection\build\esp-idf\esptool_py && F:\esp\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app F:/esp/Espressif/frameworks/fall_detection/build/partition_table/partition-table.bin F:/esp/Espressif/frameworks/fall_detection/build/main.bin"
+main.bin binary size 0x118470 bytes. Smallest app partition is 0x180000 bytes. 0x67b90 bytes (27%) free.

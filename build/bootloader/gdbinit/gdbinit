@@ -1,0 +1,2 @@
+source F:/esp/Espressif/frameworks/fall_detection/build/bootloader/gdbinit/symbols
+source F:/esp/Espressif/frameworks/fall_detection/build/bootloader/gdbinit/connect

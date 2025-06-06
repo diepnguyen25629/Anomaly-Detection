@@ -1,0 +1,1211 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  4 2025 06:21:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2dfe0h (188384) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e008 vaddr=3ffbdb60 size=02010h (  8208) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c56a0h (808608) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001056c8 vaddr=3ffbfb70 size=08d6ch ( 36204) load[0m
+[0;32mI (466) esp_image: segment 4: paddr=0010e43c vaddr=40080000 size=1e030h (122928) load[0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (531) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+[0;32mI (551) cpu_start: Pro cpu start user code[0m
+[0;32mI (551) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (551) cpu_start: Application information:[0m
+[0;32mI (554) cpu_start: Project name:     main[0m
+[0;32mI (559) cpu_start: App version:      1[0m
+[0;32mI (564) cpu_start: Compile time:     Jun  4 2025 06:21:57[0m
+[0;32mI (570) cpu_start: ELF file SHA256:  95a2055de...[0m
+[0;32mI (575) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (580) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (585) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (590) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (595) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (602) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFD1BA8 len 0000E458 (57 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 4009E030 len 00001FD0 (7 KiB): IRAM[0m
+[0;32mI (647) spi_flash: detected chip: generic[0m
+[0;32mI (650) spi_flash: flash io: dio[0m
+[0;33mW (654) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (667) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (678) coexist: coex firmware version: 994b23e[0m
+[0;32mI (684) main_task: Started on CPU0[0m
+[0;32mI (688) main_task: Calling app_main()[0m
+[0;32mI (728) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (731) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (733) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (818) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1422) WIFI_UART: GAP event: 10[0m
+[0;32mI (1429) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1435) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1440) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1441) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1488) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1542) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1551) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1560) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1571) MPU6500: Initializating MPU6500[0m
+[0;32mI (1576) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1580) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1585) main_task: Returned from app_main()[0m
+[0;32mI (1705) BMP280: Initializating BMP280[0m
+[0;32mI (1817) DS18B20_1_WIRE: Initializating DS18B20[0m
+[0;31mE (2181) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2191) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2191) MAIN: audio full sd_record_queue[0m
+[0;31mE (2201) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2211) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2221) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2221) MAIN: audio full sd_record_queue[0m
+[0;31mE (2231) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2241) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2251) MAIN: audio full sd_record_queue[0m
+[0;31mE (2252) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2261) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2271) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2281) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2281) MAIN: audio full sd_record_queue[0m
+[0;31mE (2291) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2301) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2311) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2321) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2326) MAIN: audio full sd_record_queue[0m
+[0;31mE (2331) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2341) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2351) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2356) MAIN: audio full sd_record_queue[0m
+[0;31mE (2361) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2371) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2381) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2386) MAIN: audio full sd_record_queue[0m
+[0;31mE (2391) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2401) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2411) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2416) MAIN: audio full sd_record_queue[0m
+[0;31mE (2421) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2431) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2441) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2446) MAIN: audio full sd_record_queue[0m
+[0;31mE (2451) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2461) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2471) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2476) MAIN: audio full sd_record_queue[0m
+[0;31mE (2481) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2491) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2501) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2506) MAIN: audio full sd_record_queue[0m
+[0;31mE (2511) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2521) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2531) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2536) MAIN: audio full sd_record_queue[0m
+[0;31mE (2541) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2551) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2561) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2571) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2581) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2581) MAIN: audio full sd_record_queue[0m
+[0;31mE (2591) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2601) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2611) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2611) MAIN: audio full sd_record_queue[0m
+[0;31mE (2621) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2631) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2641) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2641) MAIN: audio full sd_record_queue[0m
+[0;31mE (2651) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2661) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2671) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2671) MAIN: audio full sd_record_queue[0m
+[0;31mE (2681) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2691) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2701) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2701) MAIN: audio full sd_record_queue[0m
+[0;31mE (2711) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2721) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2731) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2731) MAIN: audio full sd_record_queue[0m
+[0;31mE (2741) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2751) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2761) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2761) MAIN: audio full sd_record_queue[0m
+[0;31mE (2771) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2781) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2791) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2801) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2806) MAIN: audio full sd_record_queue[0m
+[0;31mE (2811) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2821) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2831) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2836) MAIN: audio full sd_record_queue[0m
+[0;31mE (2841) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2866) MAIN: audio full sd_record_queue[0m
+[0;31mE (2882) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2884) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2896) MAIN: audio full sd_record_queue[0m
+[0;31mE (2901) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2911) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2921) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2926) MAIN: audio full sd_record_queue[0m
+[0;31mE (2931) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2941) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2951) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2956) MAIN: audio full sd_record_queue[0m
+[0;31mE (2961) MAIN:  imupt full sd_record_queue[0m
+[0;32mI (2969) MAIN: Recording: ON[0m
+[0;32mI (2995) SD_CARD_SPI: Started writing to file: /data/data11.bin[0m
+[0;31mE (3525) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x109, status 0x0[0m
+[0;31mE (3526) diskio_sdmmc: sdmmc_write_blocks failed (265)[0m
+[0;31mE (3529) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (3726) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (3976) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4141) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4246) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4506) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4641) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (4756) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;31mE (5016) SD_CARD_SPI: Write error: expected 1, got 0, errno=5 (I/O error)[0m
+[0;32mI (5019) MAIN: Recording: OFF[0m
+[0;31mE (5023) sdmmc_cmd: sdmmc_write_sectors_dma: sdmmc_send_cmd returned 0x105, failed to get status (0x107)[0m
+[0;31mE (5026) diskio_sdmmc: sdmmc_write_blocks failed (261)[0m
+[0;32mI (5032) SD_CARD_SPI: File closed[0m
+[0;31mE (5411) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5416) MAIN: audio full sd_record_queue[0m
+[0;31mE (5421) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5431) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5441) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5451) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5461) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5461) MAIN: audio full sd_record_queue[0m
+[0;31mE (5471) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5481) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5491) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5491) MAIN: audio full sd_record_queue[0m
+[0;31mE (5501) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5511) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5521) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5521) MAIN: audio full sd_record_queue[0m
+[0;31mE (5531) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5541) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5551) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5551) MAIN: audio full sd_record_queue[0m
+[0;31mE (5561) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5571) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5581) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5581) MAIN: audio full sd_record_queue[0m
+[0;31mE (5591) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5601) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5611) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5611) MAIN: audio full sd_record_queue[0m
+[0;31mE (5621) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5631) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5641) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5641) MAIN: audio full sd_record_queue[0m
+[0;31mE (5651) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5661) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5671) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5681) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5686) MAIN: audio full sd_record_queue[0m
+[0;31mE (5691) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5701) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5711) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5716) MAIN: audio full sd_record_queue[0m
+[0;31mE (5721) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5731) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5741) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5746) MAIN: audio full sd_record_queue[0m
+[0;31mE (5751) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5761) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5771) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5776) MAIN: audio full sd_record_queue[0m
+[0;31mE (5781) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5791) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5801) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5806) MAIN: audio full sd_record_queue[0m
+[0;31mE (5811) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5821) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5831) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5836) MAIN: audio full sd_record_queue[0m
+[0;31mE (5841) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5866) MAIN: audio full sd_record_queue[0m
+[0;31mE (5882) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5884) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5896) MAIN: audio full sd_record_queue[0m
+[0;31mE (5901) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5911) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5921) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5931) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5941) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5941) MAIN: audio full sd_record_queue[0m
+[0;31mE (5951) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5961) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5971) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5971) MAIN: audio full sd_record_queue[0m
+[0;31mE (5981) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5991) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6001) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6001) MAIN: audio full sd_record_queue[0m
+[0;31mE (6011) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6021) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6031) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6031) MAIN: audio full sd_record_queue[0m
+[0;31mE (6041) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6051) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6061) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6061) MAIN: audio full sd_record_queue[0m
+[0;31mE (6071) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6081) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6091) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6091) MAIN: audio full sd_record_queue[0m
+[0;31mE (6101) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6111) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6121) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6121) MAIN: audio full sd_record_queue[0m
+[0;31mE (6131) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6141) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6151) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6161) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6166) MAIN: audio full sd_record_queue[0m
+[0;31mE (6171) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6181) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6191) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6196) MAIN: audio full sd_record_queue[0m
+[0;31mE (6201) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6211) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6221) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6226) MAIN: audio full sd_record_queue[0m
+[0;31mE (6231) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6241) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6251) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6256) MAIN: audio full sd_record_queue[0m
+[0;31mE (6261) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6271) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6281) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6286) MAIN: audio full sd_record_queue[0m
+[0;31mE (6291) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6301) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6311) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6316) MAIN: audio full sd_record_queue[0m
+[0;31mE (6321) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6331) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6341) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6346) MAIN: audio full sd_record_queue[0m
+[0;31mE (6351) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6361) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6371) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6376) MAIN: audio full sd_record_queue[0m
+[0;31mE (6381) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6391) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6401) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6411) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6421) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6421) MAIN: audio full sd_record_queue[0m
+[0;31mE (6431) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6441) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6451) MAIN: audio full sd_record_queue[0m
+[0;31mE (6452) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6461) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6471) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6481) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6481) MAIN: audio full sd_record_queue[0m
+[0;31mE (6491) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6501) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6511) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6511) MAIN: audio full sd_record_queue[0m
+[0;31mE (6521) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6531) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6541) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6541) MAIN: audio full sd_record_queue[0m
+[0;31mE (6551) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6561) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6571) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6571) MAIN: audio full sd_record_queue[0m
+[0;31mE (6581) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6591) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6601) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6601) MAIN: audio full sd_record_queue[0m
+[0;31mE (6611) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6621) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6631) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6641) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6646) MAIN: audio full sd_record_queue[0m
+[0;31mE (6651) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6661) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6671) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6676) MAIN: audio full sd_record_queue[0m
+[0;31mE (6681) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6691) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6701) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6706) MAIN: audio full sd_record_queue[0m
+[0;31mE (6711) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6721) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6731) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6736) MAIN: audio full sd_record_queue[0m
+[0;31mE (6741) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6751) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6761) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6766) MAIN: audio full sd_record_queue[0m
+[0;31mE (6771) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6781) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6791) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6796) MAIN: audio full sd_record_queue[0m
+[0;31mE (6801) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6811) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6821) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6826) MAIN: audio full sd_record_queue[0m
+[0;31mE (6831) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6841) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6856) MAIN: audio full sd_record_queue[0m
+[0;31mE (6872) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6874) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6891) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6901) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6901) MAIN: audio full sd_record_queue[0m
+[0;31mE (6911) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6921) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6931) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6931) MAIN: audio full sd_record_queue[0m
+[0;31mE (6941) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6951) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6961) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6961) MAIN: audio full sd_record_queue[0m
+[0;31mE (6971) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6981) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6991) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6991) MAIN: audio full sd_record_queue[0m
+[0;31mE (7001) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7011) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7021) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7021) MAIN: audio full sd_record_queue[0m
+[0;31mE (7031) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7041) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7051) MAIN: audio full sd_record_queue[0m
+[0;31mE (7052) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7061) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7071) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7081) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7081) MAIN: audio full sd_record_queue[0m
+[0;31mE (7091) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7101) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7111) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7121) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7126) MAIN: audio full sd_record_queue[0m
+[0;31mE (7131) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7141) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7151) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7156) MAIN: audio full sd_record_queue[0m
+[0;31mE (7161) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7171) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7181) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7186) MAIN: audio full sd_record_queue[0m
+[0;31mE (7191) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7201) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7211) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7216) MAIN: audio full sd_record_queue[0m
+[0;31mE (7221) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7231) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7241) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7246) MAIN: audio full sd_record_queue[0m
+[0;31mE (7252) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7261) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7271) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7276) MAIN: audio full sd_record_queue[0m
+[0;31mE (7281) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7291) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7301) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7306) MAIN: audio full sd_record_queue[0m
+[0;31mE (7311) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7321) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7331) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7336) MAIN: audio full sd_record_queue[0m
+[0;31mE (7341) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7351) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7361) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7371) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7381) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7381) MAIN: audio full sd_record_queue[0m
+[0;31mE (7391) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7401) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7411) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7411) MAIN: audio full sd_record_queue[0m
+[0;31mE (7421) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7431) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7441) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7441) MAIN: audio full sd_record_queue[0m
+[0;31mE (7451) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7461) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7471) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7471) MAIN: audio full sd_record_queue[0m
+[0;31mE (7481) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7491) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7501) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7501) MAIN: audio full sd_record_queue[0m
+[0;31mE (7511) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7521) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7531) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7531) MAIN: audio full sd_record_queue[0m
+[0;31mE (7541) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7551) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7561) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7561) MAIN: audio full sd_record_queue[0m
+[0;31mE (7571) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7581) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7591) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7601) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7606) MAIN: audio full sd_record_queue[0m
+[0;31mE (7611) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7621) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7631) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7636) MAIN: audio full sd_record_queue[0m
+[0;31mE (7641) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7651) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7661) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7666) MAIN: audio full sd_record_queue[0m
+[0;31mE (7671) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7681) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7691) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7696) MAIN: audio full sd_record_queue[0m
+[0;31mE (7701) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7711) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7721) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7726) MAIN: audio full sd_record_queue[0m
+[0;31mE (7731) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7741) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7751) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7756) MAIN: audio full sd_record_queue[0m
+[0;31mE (7761) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7771) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7781) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7786) MAIN: audio full sd_record_queue[0m
+[0;31mE (7791) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7801) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7811) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7816) MAIN: audio full sd_record_queue[0m
+[0;31mE (7821) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7831) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7841) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7861) MAIN: audio full sd_record_queue[0m
+[0;31mE (7877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7879) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7891) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7891) MAIN: audio full sd_record_queue[0m
+[0;31mE (7901) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7911) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7921) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7921) MAIN: audio full sd_record_queue[0m
+[0;31mE (7931) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7941) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7951) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7951) MAIN: audio full sd_record_queue[0m
+[0;31mE (7961) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7971) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7981) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (7981) MAIN: audio full sd_record_queue[0m
+[0;31mE (7991) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8001) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8011) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8011) MAIN: audio full sd_record_queue[0m
+[0;31mE (8021) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8031) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8041) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8041) MAIN: audio full sd_record_queue[0m
+[0;31mE (8051) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8061) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8071) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8081) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8086) MAIN: audio full sd_record_queue[0m
+[0;31mE (8091) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8101) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8111) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (8116) MAIN: audio full sd_record_queue[0m
+[0;ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  4 2025 06:21:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2dfe0h (188384) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003e008 vaddr=3ffbdb60 size=02010h (  8208) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c56a0h (808608) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001056c8 vaddr=3ffbfb70 size=08d6ch ( 36204) load[0m
+[0;32mI (466) esp_image: segment 4: paddr=0010e43c vaddr=40080000 size=1e030h (122928) load[0m
+[0;32mI (530) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (531) boot: Disabling RNG early entropy source...[0m
+[0;32mI (542) cpu_start: Multicore app[0m
+[0;32mI (551) cpu_start: Pro cpu start user code[0m
+[0;32mI (551) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (551) cpu_start: Application information:[0m
+[0;32mI (554) cpu_start: Project name:     main[0m
+[0;32mI (559) cpu_start: App version:      1[0m
+[0;32mI (564) cpu_start: Compile time:     Jun  4 2025 06:21:57[0m
+[0;32mI (570) cpu_start: ELF file SHA256:  95a2055de...[0m
+[0;32mI (575) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (580) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (585) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (590) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (595) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (602) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (608) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (614) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (620) heap_init: At 3FFD1BA8 len 0000E458 (57 KiB): DRAM[0m
+[0;32mI (626) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (633) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (639) heap_init: At 4009E030 len 00001FD0 (7 KiB): IRAM[0m
+[0;32mI (647) spi_flash: detected chip: generic[0m
+[0;32mI (650) spi_flash: flash io: dio[0m
+[0;33mW (654) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (667) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (678) coexist: coex firmware version: 994b23e[0m
+[0;32mI (684) main_task: Started on CPU0[0m
+[0;32mI (688) main_task: Calling app_main()[0m
+[0;32mI (727) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (729) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (732) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (817) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (1411) WIFI_UART: GAP event: 10[0m
+[0;32mI (1417) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1423) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1428) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1471) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1656) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1666) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1675) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1686) MPU6500: Initializating MPU6500[0m
+[0;32mI (1691) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1695) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1700) main_task: Returned from app_main()[0m
+[0;32mI (1820) BMP280: Initializating BMP280[0m
+[0;32mI (1932) DS18B20_1_WIRE: Initializating DS18B20[0m
+[0;31mE (2306) MAIN: audio full sd_record_queue[0m
+[0;31mE (2307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2336) MAIN: audio full sd_record_queue[0m
+[0;31mE (2337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2366) MAIN: audio full sd_record_queue[0m
+[0;31mE (2367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2396) MAIN: audio full sd_record_queue[0m
+[0;31mE (2397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2441) MAIN: audio full sd_record_queue[0m
+[0;31mE (2447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2471) MAIN: audio full sd_record_queue[0m
+[0;31mE (2477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2501) MAIN: audio full sd_record_queue[0m
+[0;31mE (2507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2531) MAIN: audio full sd_record_queue[0m
+[0;31mE (2537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2561) MAIN: audio full sd_record_queue[0m
+[0;31mE (2567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2591) MAIN: audio full sd_record_queue[0m
+[0;31mE (2597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2621) MAIN: audio full sd_record_queue[0m
+[0;31mE (2627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2651) MAIN: audio full sd_record_queue[0m
+[0;31mE (2657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2696) MAIN: audio full sd_record_queue[0m
+[0;31mE (2697) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2726) MAIN: audio full sd_record_queue[0m
+[0;31mE (2727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2737) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2756) MAIN: audio full sd_record_queue[0m
+[0;31mE (2757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2777) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2786) MAIN: audio full sd_record_queue[0m
+[0;31mE (2787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2816) MAIN: audio full sd_record_queue[0m
+[0;31mE (2817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2846) MAIN: audio full sd_record_queue[0m
+[0;31mE (2847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2876) MAIN: audio full sd_record_queue[0m
+[0;31mE (2877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2921) MAIN: audio full sd_record_queue[0m
+[0;31mE (2927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2937) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2947) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2951) MAIN: audio full sd_record_queue[0m
+[0;31mE (2957) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2967) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2981) MAIN: audio full sd_record_queue[0m
+[0;31mE (2997) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (2999) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3011) MAIN: audio full sd_record_queue[0m
+[0;31mE (3017) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3027) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3037) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3041) MAIN: audio full sd_record_queue[0m
+[0;31mE (3047) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3057) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3067) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3071) MAIN: audio full sd_record_queue[0m
+[0;31mE (3077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3087) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3101) MAIN: audio full sd_record_queue[0m
+[0;31mE (3107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3131) MAIN: audio full sd_record_queue[0m
+[0;31mE (3137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3157) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3176) MAIN: audio full sd_record_queue[0m
+[0;31mE (3178) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3187) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3197) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3206) MAIN: audio full sd_record_queue[0m
+[0;31mE (3207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3217) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3236) MAIN: audio full sd_record_queue[0m
+[0;31mE (3237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3247) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3257) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3266) MAIN: audio full sd_record_queue[0m
+[0;31mE (3267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3296) MAIN: audio full sd_record_queue[0m
+[0;31mE (3297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3326) MAIN: audio full sd_record_queue[0m
+[0;31mE (3327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3356) MAIN: audio full sd_record_queue[0m
+[0;31mE (3358) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3401) MAIN: audio full sd_record_queue[0m
+[0;31mE (3407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3431) MAIN: audio full sd_record_queue[0m
+[0;31mE (3437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3461) MAIN: audio full sd_record_queue[0m
+[0;31mE (3467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3491) MAIN: audio full sd_record_queue[0m
+[0;31mE (3497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3521) MAIN: audio full sd_record_queue[0m
+[0;31mE (3527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3551) MAIN: audio full sd_record_queue[0m
+[0;31mE (3557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3581) MAIN: audio full sd_record_queue[0m
+[0;31mE (3587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3611) MAIN: audio full sd_record_queue[0m
+[0;31mE (3617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3656) MAIN: audio full sd_record_queue[0m
+[0;31mE (3657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3686) MAIN: audio full sd_record_queue[0m
+[0;31mE (3687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3697) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3716) MAIN: audio full sd_record_queue[0m
+[0;31mE (3717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3737) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3746) MAIN: audio full sd_record_queue[0m
+[0;31mE (3747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3776) MAIN: audio full sd_record_queue[0m
+[0;31mE (3778) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3806) MAIN: audio full sd_record_queue[0m
+[0;31mE (3807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3836) MAIN: audio full sd_record_queue[0m
+[0;31mE (3837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3881) MAIN: audio full sd_record_queue[0m
+[0;31mE (3887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3911) MAIN: audio full sd_record_queue[0m
+[0;31mE (3917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3937) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3941) MAIN: audio full sd_record_queue[0m
+[0;31mE (3947) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3957) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3967) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (3971) MAIN: audio full sd_record_queue[0m
+[0;31mE (4001) MAIN: audio full sd_record_queue[0m
+[0;31mE (4019) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4020) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4031) MAIN: audio full sd_record_queue[0m
+[0;31mE (4037) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4047) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4057) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4061) MAIN: audio full sd_record_queue[0m
+[0;31mE (4067) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4087) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4091) MAIN: audio full sd_record_queue[0m
+[0;31mE (4097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4136) MAIN: audio full sd_record_queue[0m
+[0;31mE (4137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4157) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4166) MAIN: audio full sd_record_queue[0m
+[0;31mE (4167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4177) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4187) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4196) MAIN: audio full sd_record_queue[0m
+[0;31mE (4197) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4217) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4226) MAIN: audio full sd_record_queue[0m
+[0;31mE (4227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4247) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4256) MAIN: audio full sd_record_queue[0m
+[0;31mE (4257) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4286) MAIN: audio full sd_record_queue[0m
+[0;31mE (4287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4316) MAIN: audio full sd_record_queue[0m
+[0;31mE (4317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4361) MAIN: audio full sd_record_queue[0m
+[0;31mE (4367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4391) MAIN: audio full sd_record_queue[0m
+[0;31mE (4397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4421) MAIN: audio full sd_record_queue[0m
+[0;31mE (4427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4451) MAIN: audio full sd_record_queue[0m
+[0;31mE (4457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4481) MAIN: audio full sd_record_queue[0m
+[0;31mE (4487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4511) MAIN: audio full sd_record_queue[0m
+[0;31mE (4517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4541) MAIN: audio full sd_record_queue[0m
+[0;31mE (4547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4571) MAIN: audio full sd_record_queue[0m
+[0;31mE (4577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4616) MAIN: audio full sd_record_queue[0m
+[0;31mE (4617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4646) MAIN: audio full sd_record_queue[0m
+[0;31mE (4647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4676) MAIN: audio full sd_record_queue[0m
+[0;31mE (4677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4697) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4706) MAIN: audio full sd_record_queue[0m
+[0;31mE (4707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4736) MAIN: audio full sd_record_queue[0m
+[0;31mE (4737) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4766) MAIN: audio full sd_record_queue[0m
+[0;31mE (4767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4777) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4796) MAIN: audio full sd_record_queue[0m
+[0;31mE (4797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4841) MAIN: audio full sd_record_queue[0m
+[0;31mE (4847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4871) MAIN: audio full sd_record_queue[0m
+[0;31mE (4877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4901) MAIN: audio full sd_record_queue[0m
+[0;31mE (4907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4931) MAIN: audio full sd_record_queue[0m
+[0;31mE (4937) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4947) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4957) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4961) MAIN: audio full sd_record_queue[0m
+[0;31mE (4967) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (4991) MAIN: audio full sd_record_queue[0m
+[0;31mE (5007) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5009) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5021) MAIN: audio full sd_record_queue[0m
+[0;31mE (5027) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5037) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5047) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5051) MAIN: audio full sd_record_queue[0m
+[0;31mE (5057) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5067) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5087) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5096) MAIN: audio full sd_record_queue[0m
+[0;31mE (5097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5126) MAIN: audio full sd_record_queue[0m
+[0;31mE (5127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5156) MAIN: audio full sd_record_queue[0m
+[0;31mE (5157) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5177) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5186) MAIN: audio full sd_record_queue[0m
+[0;31mE (5187) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5197) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5216) MAIN: audio full sd_record_queue[0m
+[0;31mE (5217) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5246) MAIN: audio full sd_record_queue[0m
+[0;31mE (5247) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5257) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5276) MAIN: audio full sd_record_queue[0m
+[0;31mE (5277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5321) MAIN: audio full sd_record_queue[0m
+[0;31mE (5327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5351) MAIN: audio full sd_record_queue[0m
+[0;31mE (5357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5381) MAIN: audio full sd_record_queue[0m
+[0;31mE (5387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5411) MAIN: audio full sd_record_queue[0m
+[0;31mE (5417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5441) MAIN: audio full sd_record_queue[0m
+[0;31mE (5447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5471) MAIN: audio full sd_record_queue[0m
+[0;31mE (5477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5501) MAIN: audio full sd_record_queue[0m
+[0;31mE (5507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5531) MAIN: audio full sd_record_queue[0m
+[0;31mE (5537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5576) MAIN: audio full sd_record_queue[0m
+[0;31mE (5578) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5606) MAIN: audio full sd_record_queue[0m
+[0;31mE (5607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5636) MAIN: audio full sd_record_queue[0m
+[0;31mE (5637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5666) MAIN: audio full sd_record_queue[0m
+[0;31mE (5667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5696) MAIN: audio full sd_record_queue[0m
+[0;31mE (5697) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5726) MAIN: audio full sd_record_queue[0m
+[0;31mE (5727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5737) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5756) MAIN: audio full sd_record_queue[0m
+[0;31mE (5757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5767) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5777) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5787) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5797) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5801) MAIN: audio full sd_record_queue[0m
+[0;31mE (5807) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5817) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5827) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5831) MAIN: audio full sd_record_queue[0m
+[0;31mE (5837) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5847) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5857) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5861) MAIN: audio full sd_record_queue[0m
+[0;31mE (5867) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5877) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5887) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5891) MAIN: audio full sd_record_queue[0m
+[0;31mE (5897) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5907) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5917) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5921) MAIN: audio full sd_record_queue[0m
+[0;31mE (5927) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5937) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5947) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5951) MAIN: audio full sd_record_queue[0m
+[0;31mE (5957) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5967) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5981) MAIN: audio full sd_record_queue[0m
+[0;31mE (5997) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (5999) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6011) MAIN: audio full sd_record_queue[0m
+[0;31mE (6017) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6027) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6037) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6047) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6056) MAIN: audio full sd_record_queue[0m
+[0;31mE (6057) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6067) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6077) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6086) MAIN: audio full sd_record_queue[0m
+[0;31mE (6087) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6097) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6107) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6116) MAIN: audio full sd_record_queue[0m
+[0;31mE (6117) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6127) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6137) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6146) MAIN: audio full sd_record_queue[0m
+[0;31mE (6147) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6157) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6167) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6176) MAIN: audio full sd_record_queue[0m
+[0;31mE (6178) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6187) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6197) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6206) MAIN: audio full sd_record_queue[0m
+[0;31mE (6207) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6217) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6227) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6236) MAIN: audio full sd_record_queue[0m
+[0;31mE (6237) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6247) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6257) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6267) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6277) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6281) MAIN: audio full sd_record_queue[0m
+[0;31mE (6287) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6297) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6307) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6311) MAIN: audio full sd_record_queue[0m
+[0;31mE (6317) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6327) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6337) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6341) MAIN: audio full sd_record_queue[0m
+[0;31mE (6347) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6357) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6367) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6371) MAIN: audio full sd_record_queue[0m
+[0;31mE (6377) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6387) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6397) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6401) MAIN: audio full sd_record_queue[0m
+[0;31mE (6407) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6417) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6427) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6431) MAIN: audio full sd_record_queue[0m
+[0;31mE (6437) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6447) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6457) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6461) MAIN: audio full sd_record_queue[0m
+[0;31mE (6467) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6477) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6487) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6491) MAIN: audio full sd_record_queue[0m
+[0;31mE (6497) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6507) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6517) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6527) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6536) MAIN: audio full sd_record_queue[0m
+[0;31mE (6537) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6547) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6557) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6566) MAIN: audio full sd_record_queue[0m
+[0;31mE (6567) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6577) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6587) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6596) MAIN: audio full sd_record_queue[0m
+[0;31mE (6597) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6607) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6617) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6626) MAIN: audio full sd_record_queue[0m
+[0;31mE (6627) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6637) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6647) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6656) MAIN: audio full sd_record_queue[0m
+[0;31mE (6657) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6667) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6677) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6686) MAIN: audio full sd_record_queue[0m
+[0;31mE (6687) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6697) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6707) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6716) MAIN: audio full sd_record_queue[0m
+[0;31mE (6717) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6727) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6737) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6747) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6757) MAIN:  imupt full sd_record_queue[0m
+[0;31mE (6761) MAIN: audio full sd_record_queue[0m

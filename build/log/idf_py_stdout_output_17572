@@ -1,0 +1,1080 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df40h (188224) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003df68 vaddr=3ffbdb60 size=020b0h (  8368) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c56e8h (808680) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=00105710 vaddr=3ffbfc10 size=0401ch ( 16412) load[0m
+[0;32mI (458) esp_image: segment 4: paddr=00109734 vaddr=40080000 size=1df98h (122776) load[0m
+[0;32mI (522) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (522) boot: Disabling RNG early entropy source...[0m
+[0;32mI (534) cpu_start: Multicore app[0m
+[0;32mI (543) cpu_start: Pro cpu start user code[0m
+[0;32mI (543) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (543) cpu_start: Application information:[0m
+[0;32mI (546) cpu_start: Project name:     main[0m
+[0;32mI (551) cpu_start: App version:      1[0m
+[0;32mI (555) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (561) cpu_start: ELF file SHA256:  0e68d7e59...[0m
+[0;32mI (566) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (572) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (576) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (581) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (586) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (593) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (605) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (612) heap_init: At 3FFCE038 len 00011FC8 (71 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (631) heap_init: At 4009DF98 len 00002068 (8 KiB): IRAM[0m
+[0;32mI (638) spi_flash: detected chip: generic[0m
+[0;32mI (641) spi_flash: flash io: dio[0m
+[0;33mW (645) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (659) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (669) coexist: coex firmware version: 994b23e[0m
+[0;32mI (675) main_task: Started on CPU0[0m
+[0;32mI (685) main_task: Calling app_main()[0m
+[0;32mI (715) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (715) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (725) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1355) WIFI_UART: GAP event: 10[0m
+[0;32mI (1365) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1375) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1375) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1375) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1425) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1485) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1485) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1495) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1505) MPU6500: Initializating MPU6500[0m
+[0;32mI (1515) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1515) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1525) main_task: Returned from app_main()[0m
+[0;32mI (1635) BMP280: Initializating BMP280[0m
+[0;33mW (58945) BT_HCI: hcif conn complete: hdl 0x80, st 0x0[0m
+[0;32mI (58965) WIFI_UART: GAP event: 16[0m
+[0;32mI (59085) WIFI_UART: GAP event: 21[0m
+[0;33mW (59235) BT_APPL: new conn_srvc id:26, app_id:255[0m
+[0;32mI (61265) WIFI_UART: SSID: Xiaomi 11T
+ PASS: diep1493
+ IP: 192.168.42.156
+[0m
+[0;32mI (61265) MAIN: Disabling Bluetooth...[0m
+[0;33mW (61275) BT_BTC: spp_free_pending_slots found slot(rfc_handle=0x81) pending to close, close it now![0m
+[0;33mW (61295) BT_APPL: bta_jv_rfc_port_to_cb(port_handle:0x2):jv handle:0x0 not FOUND[0m
+[0;33mW (61295) BT_RFCOMM: port_rfc_closed RFCOMM connection in server:1 state 3 closed: Closed (res: 19)[0m
+[0;33mW (61365) BT_HCI: hci cmd send: disconnect: hdl 0x80, rsn:0x13[0m
+[0;33mW (61445) BT_HCI: hcif disc complete: hdl 0x80, rsn 0x16[0m
+[0;32mI (61445) WIFI_UART: GAP event: 17[0m
+[0;32mI (62855) MAIN: Bluetooth disabled[0m
+[0;32mI (62865) wifi:wifi driver task: 3ffcf1a8, prio:23, stack:3584, core=0[0m
+[0;32mI (62875) wifi:wifi firmware version: 01d22db[0m
+[0;32mI (62885) wifi:wifi certification version: v7.0[0m
+[0;32mI (62885) wifi:config NVS flash: enabled[0m
+[0;32mI (62885) wifi:config nano formating: disabled[0m
+[0;32mI (62885) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (62895) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (62895) wifi:Init management short buffer num: 32[0m
+[0;32mI (62895) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (62905) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (62905) wifi:Init static rx buffer num: 10[0m
+[0;32mI (62915) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (62915) wifi_init: tcpip mbox: 32[0m
+[0;32mI (62915) wifi_init: udp mbox: 6[0m
+[0;32mI (62925) wifi_init: tcp mbox: 6[0m
+[0;32mI (62925) wifi_init: tcp tx win: 5760[0m
+[0;32mI (62935) wifi_init: tcp rx win: 5760[0m
+[0;32mI (62935) wifi_init: tcp mss: 1440[0m
+[0;32mI (62945) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (62955) wifi:mode : sta (cc:7b:5c:27:ec:d4)[0m
+[0;32mI (62955) wifi:enable tsf[0m
+[0;32mI (62955) WIFI_UART: WiFi connecting to Xiaomi 11T[0m
+[0;32mI (62965) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (62965) wifi:state: init -> auth (b0)[0m
+[0;32mI (62975) wifi:state: auth -> assoc (0)[0m
+[0;32mI (62995) wifi:state: assoc -> run (10)[0m
+[0;32mI (63005) wifi:connected with Xiaomi 11T, aid = 2, channel 11, BW20, bssid = 26:b5:fa:76:60:09[0m
+[0;32mI (63005) wifi:security: WPA2-PSK, phy: bgn, rssi: -41[0m
+[0;32mI (63015) wifi:pm start, type: 1[0m
+
+[0;32mI (63015) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (63055) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (63065) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (64025) esp_netif_handlers: sta ip: 192.168.42.138, mask: 255.255.255.0, gw: 192.168.42.129[0m
+[0;32mI (64025) WIFI_UART: Got IP: 192.168.42.138[0m
+[0;32mI (64025) TCP_CONNECT: Connecting to 192.168.42.156:12345...[0m
+[0;32mI (64045) TCP_CONNECT: Successfully connected to 192.168.42.156:12345[0m
+[0;32mI (64055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64205) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64415) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64415) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64425) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64615) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64615) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64625) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64635) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64645) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (64975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65025) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65615) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65615) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65625) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65635) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65645) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (65985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66025) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66405) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66405) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66415) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66425) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (66985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67635) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67635) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67645) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (67985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (68985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69025) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69425) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69425) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69625) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69635) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69645) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (69985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70025) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70405) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70415) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70425) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (70985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71015) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71025) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71425) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71595) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71815) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71825) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (71985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72195) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72575) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72585) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72635) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72635) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72645) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72655) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72665) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72675) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72685) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72695) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72705) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72715) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72725) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72735) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72745) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72755) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72765) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72775) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72835) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72845) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72855) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72865) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72875) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72885) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72895) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72905) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72915) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72925) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72935) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72945) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72955) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72965) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72975) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72985) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (72995) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73035) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73045) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73055) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73065) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73075) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73085) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73095) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73105) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73115) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73125) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73135) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73145) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73155) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73165) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73175) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73185) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73215) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73225) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73235) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73245) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73255) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73265) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73275) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73285) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73295) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73305) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73315) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73325) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73335) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73345) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73355) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73365) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73375) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73385) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73435) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73445) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73455) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73465) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73475) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73485) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73495) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73505) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73515) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73525) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73535) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73545) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73555) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (73565) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (78785) MAIN: imupt_packet.valid_count : 1[0m
+[0;32mI (83285) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;31mE (83785) MAIN: IMU send failed[0m
+[0;32mI (85785) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (85795) wifi:state: run -> init (c800)[0m
+[0;32mI (85805) wifi:pm stop, total sleep time: 2745023 us / 22788890 us[0m
+
+[0;32mI (85805) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (85815) WIFI_UART: Retry to connect...[0m
+[0;32mI (85815) WIFI_UART: Connect to AP failed.[0m
+[0;32mI (88235) WIFI_UART: Retry to connect...[0m
+[0;32mI (88235) WIFI_UART: Connect to AP failed.[0m
+[0;32mI (90655) WIFI_UART: Retry to connect...[0m
+[0;32mI (90655) WIFI_UART: Connect to AP failed.[0m
+[0;32mI (93075) WIFI_UART: Retry to connect...[0m
+[0;32mI (93075) WIFI_UART: Connect to AP failed.[0m
+[0;32mI (95495) WIFI_UART: Retry to connect...[0m
+[0;32mI (95495) WIFI_UART: Connect to AP failed.[0m
+[0;32mI (97915) WIFI_UART: Connect to AP failed.[0m

@@ -1,0 +1,55 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400014fa: strlen in ROM
+0x400d65ca: get_vfs_for_path at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:345
+0x400d6639: esp_vfs_open at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:435
+0x40174b2e: _fopen_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fopen.c:129
+0x40174be5: fopen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fopen.c:168 (discriminator 1)
+0x400d9651: sd_spi_start_write at F:/esp/Espressif/frameworks/fall_detection/components/sd_card_spi.c:82
+0x400d8417: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:337
+0x400929f9: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400014fa: strlen in ROM
+0x400d65ca: get_vfs_for_path at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:345
+0x400d6639: esp_vfs_open at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:435
+0x40174b2e: _fopen_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fopen.c:129
+0x40174be5: fopen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fopen.c:168 (discriminator 1)
+0x400d9651: sd_spi_start_write at F:/esp/Espressif/frameworks/fall_detection/components/sd_card_spi.c:82
+0x400d8417: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:337
+0x400929f9: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400014fa: strlen in ROM
+0x400d65ca: get_vfs_for_path at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:345
+0x400d6639: esp_vfs_open at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:435
+0x40174b2e: _fopen_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fopen.c:129
+0x40174be5: fopen at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fopen.c:168 (discriminator 1)
+0x400d9651: sd_spi_start_write at F:/esp/Espressif/frameworks/fall_detection/components/sd_card_spi.c:82
+0x400d8417: write_data_to_sd_task at F:/esp/Espressif/frameworks/fall_detection/main/main1.c:337
+0x400929f9: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

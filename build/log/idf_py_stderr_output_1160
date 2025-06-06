@@ -1,0 +1,199 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40084924: i2s_ll_get_intr_status at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/i2s_ll.h:459
+ (inlined by) i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:583
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40084921: i2s_ll_get_intr_status at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/i2s_ll.h:459
+ (inlined by) i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:583
+0x400828e5: shared_intr_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/intr_alloc.c:445
+0x40083fe1: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d7649: uart_ll_get_txfifo_len at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:185
+0x400d7e83: uart_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:238
+0x400d6bd7: console_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d6762: esp_vfs_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40174211: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40180f8f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40180952: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x40174771: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4019322d: esp_log_writev at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/log/log.c:212
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40084924: i2s_ll_get_intr_status at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/i2s_ll.h:459
+ (inlined by) i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:583
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40084921: i2s_ll_get_intr_status at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/i2s_ll.h:459
+ (inlined by) i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:583
+0x400828e5: shared_intr_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/intr_alloc.c:445
+0x40083fe1: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d7644: uart_ll_get_txfifo_len at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:185
+0x400d7e83: uart_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:238
+0x400d6bd7: console_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d6762: esp_vfs_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40174211: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40180f8f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40180952: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x40174771: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4019322d: esp_log_writev at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/log/log.c:212
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083f90: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d7644: uart_ll_get_txfifo_len at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:185
+[0m
+[0;33m--- 0x40092e3a: _frxt_int_enter at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:140
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400d4357: uart_hal_write_txfifo at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/uart_hal_iram.c:27
+0x4008fa3a: esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:145
+0x4008fa3a: esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m--- 0x40083f8d: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d7641: uart_tx_char at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:183
+0x400d7e83: uart_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:238
+0x400d6bd7: console_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d6762: esp_vfs_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40174211: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40180f8f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40180952: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x40174771: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4019322d: esp_log_writev at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/log/log.c:212
+[0m
+[0;33m--- 0x4008fa3a: esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m--- 0x40087024: ipc_task at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/esp_ipc.c:52
+[0m
+[0;33m--- 0x4008fa37: xt_utils_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:132
+0x400d41eb: esp_vApplicationIdleHook at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/freertos_hooks.c:59
+0x40093ad5: prvIdleTask at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/tasks.c:4316 (discriminator 1)
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40084924: i2s_ll_get_intr_status at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/i2s_ll.h:459
+ (inlined by) i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:583
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x40084921: i2s_ll_get_intr_status at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/esp32/include/hal/i2s_ll.h:459
+ (inlined by) i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:583
+0x400828e5: shared_intr_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/intr_alloc.c:445
+0x40083fe1: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d7641: uart_tx_char at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:183
+0x400d7e83: uart_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:238
+0x400d6bd7: console_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d6762: esp_vfs_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40174211: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40180f8f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40180952: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x40174771: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4019322d: esp_log_writev at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/log/log.c:212
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m--- 0x4008491f: i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:583
+[0m
+[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- 0x4008491c: i2s_dma_rx_callback at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/driver/i2s/i2s_common.c:576
+0x400828e5: shared_intr_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/intr_alloc.c:445
+0x40083fe1: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d7641: uart_tx_char at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:183
+0x400d7e83: uart_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:238
+0x400d6bd7: console_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d6762: esp_vfs_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40174211: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40180f8f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40180952: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x40174771: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4019322d: esp_log_writev at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/log/log.c:212
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m--- 0x400828d6: shared_intr_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/intr_alloc.c:443 (discriminator 1)
+0x40083fe4: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m--- 0x40092e3a: _frxt_int_enter at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:140
+[0m
+[0;33m.[0m[0;33m--- 0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m--- 0x400d4357: uart_hal_write_txfifo at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/hal/uart_hal_iram.c:27
+0x4008fa3a: esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:145
+0x4008fa3a: esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m.[0m[0;33m--- 0x400828d3: shared_intr_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/intr_alloc.c:443
+0x40083fe1: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x400d7641: uart_tx_char at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:183
+0x400d7e83: uart_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_uart.c:238
+0x400d6bd7: console_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d6762: esp_vfs_write at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40174211: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x40180f8f: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x40180952: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x40174771: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4019322d: esp_log_writev at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/log/log.c:212
+[0m
+[0;33m.[0m[0;33m--- 0x4008fa3a: esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m--- 0x40087024: ipc_task at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/esp_ipc.c:52
+[0m
+[0;33m--- 0x4008fa37: xt_utils_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_hw_support/cpu.c:132
+0x400d41eb: esp_vApplicationIdleHook at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/freertos_hooks.c:59
+0x40093ad5: prvIdleTask at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/tasks.c:4316 (discriminator 1)
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

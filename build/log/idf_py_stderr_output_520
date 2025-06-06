@@ -1,0 +1,187 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40083d60: _xt_user_exit at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:833
+[0m
+[0;33m--- 0x40087000: esp_crosscore_int_send_yield at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/crosscore_int.c:173
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

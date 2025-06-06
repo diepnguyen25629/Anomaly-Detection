@@ -1,0 +1,33 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x401166c7: task_wdt_timeout_handling at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/task_wdt/task_wdt.c:441
+0x40116ae4: task_wdt_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/task_wdt/task_wdt.c:515
+0x40083fe1: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40092db2: vPortClearInterruptMaskFromISR at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x400d974d: ds18b20_read at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:55
+0x400d98bb: isConversionComplete at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:187
+0x400d9924: ds18b20_requestTemperatures at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:182 (discriminator 1)
+0x400d9a33: ds18b20_getTempC at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:231
+0x400d825f: read_imupt_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:231
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x401166c7: task_wdt_timeout_handling at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/task_wdt/task_wdt.c:441
+0x40116ae4: task_wdt_isr at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/esp_system/task_wdt/task_wdt.c:515
+0x40083fe1: _xt_lowint1 at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x40092db2: vPortClearInterruptMaskFromISR at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:514
+0x400d974d: ds18b20_read at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:55
+0x400d98bb: isConversionComplete at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:187
+0x400d9924: ds18b20_requestTemperatures at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:182 (discriminator 1)
+0x400d9a33: ds18b20_getTempC at F:/esp/Espressif/frameworks/fall_detection/components/ds18b20_1_wire.c:231
+0x400d825f: read_imupt_task at F:/esp/Espressif/frameworks/fall_detection/main/main.c:231
+0x40092a01: vPortTaskWrapper at F:/esp/Espressif/frameworks/esp-idf-v5.2.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0m

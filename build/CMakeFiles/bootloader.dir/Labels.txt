@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+F:/esp/Espressif/frameworks/fall_detection/build/CMakeFiles/bootloader
+F:/esp/Espressif/frameworks/fall_detection/build/CMakeFiles/bootloader.rule
+F:/esp/Espressif/frameworks/fall_detection/build/CMakeFiles/bootloader-complete.rule
+F:/esp/Espressif/frameworks/fall_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+F:/esp/Espressif/frameworks/fall_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+F:/esp/Espressif/frameworks/fall_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+F:/esp/Espressif/frameworks/fall_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+F:/esp/Espressif/frameworks/fall_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+F:/esp/Espressif/frameworks/fall_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+F:/esp/Espressif/frameworks/fall_detection/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

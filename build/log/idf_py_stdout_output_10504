@@ -1,0 +1,575 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fb90h ( 64400) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0001fbb8 vaddr=3ffbdb60 size=00460h (  1120) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=284b0h (165040) map[0m
+[0;32mI (189) esp_image: segment 3: paddr=000484d8 vaddr=3ffbdfc0 size=036c0h ( 14016) load[0m
+[0;32mI (195) esp_image: segment 4: paddr=0004bba0 vaddr=40080000 size=1067ch ( 67196) load[0m
+[0;32mI (230) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (230) boot: Disabling RNG early entropy source...[0m
+[0;32mI (241) cpu_start: Multicore app[0m
+[0;32mI (250) cpu_start: Pro cpu start user code[0m
+[0;32mI (250) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (251) cpu_start: Application information:[0m
+[0;32mI (253) cpu_start: Project name:     main[0m
+[0;32mI (258) cpu_start: App version:      1[0m
+[0;32mI (263) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (269) cpu_start: ELF file SHA256:  d642c749e...[0m
+[0;32mI (274) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (279) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (284) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (294) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (301) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFC2068 len 0001DF98 (119 KiB): DRAM[0m
+[0;32mI (313) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 4009067C len 0000F984 (62 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;33mW (341) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (354) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (365) coexist: coex firmware version: 994b23e[0m
+[0;32mI (371) main_task: Started on CPU0[0m
+[0;32mI (381) main_task: Calling app_main()[0m
+[0;32mI (381) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (381) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (391) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (441) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (491) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (491) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (501) MPU6500: Initializating MPU6500[0m
+[0;32mI (511) main_task: Returned from app_main()[0m
+[0;32mI (2301) MAIN: Recording: ON[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x400d260b[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x400803c3[0m
+[0;32mI (102) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (111) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (126) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (133) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (141) boot: End of partition table[0m
+[0;32mI (145) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fb90h ( 64400) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0001fbb8 vaddr=3ffbdb60 size=00460h (  1120) load[0m
+[0;32mI (177) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=284b0h (165040) map[0m
+[0;32mI (238) esp_image: segment 3: paddr=000484d8 vaddr=3ffbdfc0 size=036c0h ( 14016) load[0m
+[0;32mI (244) esp_image: segment 4: paddr=0004bba0 vaddr=40080000 size=1067ch ( 67196) load[0m
+[0;32mI (279) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (279) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Multicore app[0m
+[0;32mI (300) cpu_start: Pro cpu start user code[0m
+[0;32mI (300) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (300) cpu_start: Application information:[0m
+[0;32mI (303) cpu_start: Project name:     main[0m
+[0;32mI (307) cpu_start: App version:      1[0m
+[0;32mI (312) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (318) cpu_start: ELF file SHA256:  d642c749e...[0m
+[0;32mI (323) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (329) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (333) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (338) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (343) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (356) heap_init: At 3FFC2068 len 0001DF98 (119 KiB): DRAM[0m
+[0;32mI (362) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (369) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (375) heap_init: At 4009067C len 0000F984 (62 KiB): IRAM[0m
+[0;32mI (383) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;33mW (390) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (403) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (414) coexist: coex firmware version: 994b23e[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (430) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (430) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (480) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (660) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (660) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (670) MPU6500: Initializating MPU6500[0m
+[0;32mI (680) main_task: Returned from app_main()[0m
+[0;32mI (5020) MAIN: Recording: ON[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x400d260b[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x400803c0[0m
+[0;32mI (102) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (111) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (126) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (133) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (141) boot: End of partition table[0m
+[0;32mI (145) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fb90h ( 64400) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0001fbb8 vaddr=3ffbdb60 size=00460h (  1120) load[0m
+[0;32mI (177) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=284b0h (165040) map[0m
+[0;32mI (238) esp_image: segment 3: paddr=000484d8 vaddr=3ffbdfc0 size=036c0h ( 14016) load[0m
+[0;32mI (244) esp_image: segment 4: paddr=0004bba0 vaddr=40080000 size=1067ch ( 67196) load[0m
+[0;32mI (279) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (279) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Multicore app[0m
+[0;32mI (300) cpu_start: Pro cpu start user code[0m
+[0;32mI (300) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (300) cpu_start: Application information:[0m
+[0;32mI (303) cpu_start: Project name:     main[0m
+[0;32mI (307) cpu_start: App version:      1[0m
+[0;32mI (312) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (318) cpu_start: ELF file SHA256:  d642c749e...[0m
+[0;32mI (323) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (329) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (333) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (338) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (343) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (356) heap_init: At 3FFC2068 len 0001DF98 (119 KiB): DRAM[0m
+[0;32mI (362) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (369) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (375) heap_init: At 4009067C len 0000F984 (62 KiB): IRAM[0m
+[0;32mI (383) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;33mW (390) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (403) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (414) coexist: coex firmware version: 994b23e[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (430) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (430) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (480) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (660) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (660) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (670) MPU6500: Initializating MPU6500[0m
+[0;32mI (680) main_task: Returned from app_main()[0m
+[0;32mI (1620) MAIN: Recording: ON[0m
+[0;31mE (2680) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (2680) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (2680) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (2690) MAIN: Failed to open imu file[0m
+[0;31mE (2790) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (2790) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (2790) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (2800) MAIN: Failed to open imu file[0m
+[0;31mE (2900) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (2900) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (2900) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (2910) MAIN: Failed to open imu file[0m
+[0;31mE (3010) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3010) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3010) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (3020) MAIN: Failed to open imu file[0m
+[0;31mE (3120) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3120) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3120) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (3130) MAIN: Failed to open imu file[0m
+[0;31mE (3230) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3230) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3230) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (3240) MAIN: Failed to open imu file[0m
+[0;31mE (3340) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3340) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3340) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (3350) MAIN: Failed to open imu file[0m
+[0;31mE (3450) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3450) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3450) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (3460) MAIN: Failed to open imu file[0m
+[0;31mE (3560) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (3560) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (3560) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (3570) MAIN: Failed to open imu file[0m
+[0;32mI (3620) MAIN: Recording: OFF[0m
+[0;32mI (4870) MAIN: Recording: ON[0m
+[0;31mE (4970) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (4970) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (4970) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (4980) MAIN: Failed to open imu file[0m
+[0;31mE (5080) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5080) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5080) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5090) MAIN: Failed to open imu file[0m
+[0;31mE (5190) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5190) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5190) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5200) MAIN: Failed to open imu file[0m
+[0;31mE (5300) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5300) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5300) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5310) MAIN: Failed to open imu file[0m
+[0;31mE (5410) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5410) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5410) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5420) MAIN: Failed to open imu file[0m
+[0;31mE (5520) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5520) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5520) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5530) MAIN: Failed to open imu file[0m
+[0;31mE (5630) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5630) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5630) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5640) MAIN: Failed to open imu file[0m
+[0;31mE (5740) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5740) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5740) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5750) MAIN: Failed to open imu file[0m
+[0;31mE (5850) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5850) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5850) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5860) MAIN: Failed to open imu file[0m
+[0;31mE (5960) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (5960) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (5960) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (5970) MAIN: Failed to open imu file[0m
+[0;31mE (6070) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (6070) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (6070) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (6080) MAIN: Failed to open imu file[0m
+[0;31mE (6180) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (6180) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (6180) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (6190) MAIN: Failed to open imu file[0m
+[0;32mI (6270) MAIN: Recording: OFF[0m
+[0;32mI (11470) MAIN: Recording: ON[0m
+[0;31mE (11490) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (11490) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (11490) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (11500) MAIN: Failed to open imu file[0m
+[0;31mE (11600) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (11600) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (11600) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (11610) MAIN: Failed to open imu file[0m
+[0;31mE (11710) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (11710) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (11710) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (11720) MAIN: Failed to open imu file[0m
+[0;31mE (11820) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (11820) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (11820) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (11830) MAIN: Failed to open imu file[0m
+[0;31mE (11930) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (11930) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (11930) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (11940) MAIN: Failed to open imu file[0m
+[0;31mE (12040) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (12040) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (12040) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (12050) MAIN: Failed to open imu file[0m
+[0;31mE (12150) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (12150) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (12150) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (12160) MAIN: Failed to open imu file[0m
+[0;31mE (12260) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (12260) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (12260) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (12270) MAIN: Failed to open imu file[0m
+[0;31mE (12370) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[0;31mE (12370) diskio_sdmmc: sdmmc_read_blocks failed (263)[0m
+[0;31mE (12370) SD_CARD_SPI: Failed to open file for writing: /data/imupt3.csv (errno = 5)[0m
+[0;31mE (12380) MAIN: Failed to open imu file[0m
+[0;32mI (12470) MAIN: Recording: OFF[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fb90h ( 64400) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0001fbb8 vaddr=3ffbdb60 size=00460h (  1120) load[0m
+[0;32mI (128) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=284b0h (165040) map[0m
+[0;32mI (189) esp_image: segment 3: paddr=000484d8 vaddr=3ffbdfc0 size=036c0h ( 14016) load[0m
+[0;32mI (195) esp_image: segment 4: paddr=0004bba0 vaddr=40080000 size=1067ch ( 67196) load[0m
+[0;32mI (230) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (230) boot: Disabling RNG early entropy source...[0m
+[0;32mI (241) cpu_start: Multicore app[0m
+[0;32mI (250) cpu_start: Pro cpu start user code[0m
+[0;32mI (250) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (251) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     main[0m
+[0;32mI (258) cpu_start: App version:      1[0m
+[0;32mI (263) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (269) cpu_start: ELF file SHA256:  d642c749e...[0m
+[0;32mI (274) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (279) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (284) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (294) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (301) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFC2068 len 0001DF98 (119 KiB): DRAM[0m
+[0;32mI (313) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 4009067C len 0000F984 (62 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;33mW (341) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (354) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (365) coexist: coex firmware version: 994b23e[0m
+[0;32mI (371) main_task: Started on CPU0[0m
+[0;32mI (381) main_task: Calling app_main()[0m
+[0;32mI (381) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (381) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (431) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (611) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (611) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (621) MPU6500: Initializating MPU6500[0m
+[0;32mI (631) main_task: Returned from app_main()[0m
+[0;32mI (2071) MAIN: Recording: ON[0m
+[0;32mI (2271) SD_CARD_SPI: Started writing to file: /data/imupt3.csv[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x400d260b[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x400803c0[0m
+[0;32mI (102) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (111) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (126) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (133) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (141) boot: End of partition table[0m
+[0;32mI (145) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fb90h ( 64400) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0001fbb8 vaddr=3ffbdb60 size=00460h (  1120) load[0m
+[0;32mI (177) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=284b0h (165040) map[0m
+[0;32mI (238) esp_image: segment 3: paddr=000484d8 vaddr=3ffbdfc0 size=036c0h ( 14016) load[0m
+[0;32mI (244) esp_image: segment 4: paddr=0004bba0 vaddr=40080000 size=1067ch ( 67196) load[0m
+[0;32mI (279) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (279) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Multicore app[0m
+[0;32mI (300) cpu_start: Pro cpu start user code[0m
+[0;32mI (300) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (300) cpu_start: Application information:[0m
+[0;32mI (303) cpu_start: Project name:     main[0m
+[0;32mI (307) cpu_start: App version:      1[0m
+[0;32mI (312) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (318) cpu_start: ELF file SHA256:  d642c749e...[0m
+[0;32mI (323) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (329) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (333) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (338) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (343) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (356) heap_init: At 3FFC2068 len 0001DF98 (119 KiB): DRAM[0m
+[0;32mI (362) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (369) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (375) heap_init: At 4009067C len 0000F984 (62 KiB): IRAM[0m
+[0;32mI (383) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;33mW (390) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (403) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (414) coexist: coex firmware version: 994b23e[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (430) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (430) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (440) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (490) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (540) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (540) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (550) MPU6500: Initializating MPU6500[0m
+[0;32mI (560) main_task: Returned from app_main()[0m
+[0;32mI (3900) MAIN: Recording: ON[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (61) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (61) boot: compile time May 31 2025 03:31:10[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.1[0m
+[0;32mI (71) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (90) boot.esp32: WDT reset info: PRO CPU PC=0x400d260b[0m
+[0;33mW (96) boot.esp32: WDT reset info: APP CPU PC=0x400803c0[0m
+[0;32mI (102) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (111) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (126) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (133) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (141) boot: End of partition table[0m
+[0;32mI (145) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0fb90h ( 64400) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0001fbb8 vaddr=3ffbdb60 size=00460h (  1120) load[0m
+[0;32mI (177) esp_image: segment 2: paddr=00020020 vaddr=400d0020 size=284b0h (165040) map[0m
+[0;32mI (238) esp_image: segment 3: paddr=000484d8 vaddr=3ffbdfc0 size=036c0h ( 14016) load[0m
+[0;32mI (244) esp_image: segment 4: paddr=0004bba0 vaddr=40080000 size=1067ch ( 67196) load[0m
+[0;32mI (279) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (279) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Multicore app[0m
+[0;32mI (300) cpu_start: Pro cpu start user code[0m
+[0;32mI (300) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (300) cpu_start: Application information:[0m
+[0;32mI (303) cpu_start: Project name:     main[0m
+[0;32mI (307) cpu_start: App version:      1[0m
+[0;32mI (312) cpu_start: Compile time:     May 31 2025 21:33:39[0m
+[0;32mI (318) cpu_start: ELF file SHA256:  d642c749e...[0m
+[0;32mI (323) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (329) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (333) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (338) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (343) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (356) heap_init: At 3FFC2068 len 0001DF98 (119 KiB): DRAM[0m
+[0;32mI (362) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (369) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (375) heap_init: At 4009067C len 0000F984 (62 KiB): IRAM[0m
+[0;32mI (383) spi_flash: detected chip: generic[0m
+[0;32mI (386) spi_flash: flash io: dio[0m
+[0;33mW (390) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (403) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (414) coexist: coex firmware version: 994b23e[0m
+[0;32mI (420) main_task: Started on CPU0[0m
+[0;32mI (430) main_task: Calling app_main()[0m
+[0;32mI (430) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (430) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (480) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (660) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (660) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (670) MPU6500: Initializating MPU6500[0m
+[0;32mI (680) main_task: Returned from app_main()[0m
+[0;32mI (820) MAIN: Recording: ON[0m
+[0;32mI (910) SD_CARD_SPI: Started writing to file: /data/imupt3.csv[0m
+[0;32mI (2620) MAIN: Recording: OFF[0m
+[0;32mI (2660) SD_CARD_SPI: File closed[0m

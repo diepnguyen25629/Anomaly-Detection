@@ -1,0 +1,89 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  4 2025 06:21:56[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00180000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2df90h (188304) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003dfb8 vaddr=3ffbdb60 size=02060h (  8288) load[0m
+[0;32mI (173) esp_image: segment 2: paddr=00040020 vaddr=400d0020 size=c57a4h (808868) map[0m
+[0;32mI (452) esp_image: segment 3: paddr=001057cc vaddr=3ffbfbc0 size=04bach ( 19372) load[0m
+[0;32mI (460) esp_image: segment 4: paddr=0010a380 vaddr=40080000 size=1e030h (122928) load[0m
+[0;32mI (523) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (523) boot: Disabling RNG early entropy source...[0m
+[0;32mI (535) cpu_start: Multicore app[0m
+[0;32mI (544) cpu_start: Pro cpu start user code[0m
+[0;32mI (544) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (544) cpu_start: Application information:[0m
+[0;32mI (547) cpu_start: Project name:     main[0m
+[0;32mI (552) cpu_start: App version:      1[0m
+[0;32mI (556) cpu_start: Compile time:     Jun  4 2025 06:21:57[0m
+[0;32mI (562) cpu_start: ELF file SHA256:  f2fb60957...[0m
+[0;32mI (568) cpu_start: ESP-IDF:          v5.2.5-dirty[0m
+[0;32mI (573) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (578) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (583) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (588) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (595) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (601) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (607) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (613) heap_init: At 3FFD23A0 len 0000DC60 (55 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (625) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (632) heap_init: At 4009E030 len 00001FD0 (7 KiB): IRAM[0m
+[0;32mI (640) spi_flash: detected chip: generic[0m
+[0;32mI (643) spi_flash: flash io: dio[0m
+[0;33mW (647) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (660) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (671) coexist: coex firmware version: 994b23e[0m
+[0;32mI (676) main_task: Started on CPU0[0m
+[0;32mI (680) main_task: Calling app_main()[0m
+[0;32mI (721) BTDM_INIT: BT controller compile version [f7360be][0m
+[0;32mI (723) BTDM_INIT: Bluetooth MAC: cc:7b:5c:27:ec:d6[0m
+[0;32mI (726) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (1385) WIFI_UART: GAP event: 10[0m
+[0;32mI (1392) WIFI_UART: Bluetooth ready[0m
+[0;32mI (1395) SD_CARD_SPI: Mounting SD card at /data[0m
+[0;32mI (1402) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1404) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (1451) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: SS08G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 7580MB
+CSD: ver=2, sector_size=512, capacity=15523840 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (1504) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1513) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1523) gpio: GPIO[22]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1533) MPU6500: Initializating MPU6500[0m
+[0;32mI (1539) INMP441_I2S: INMP441 I2S initialized (port 0)[0m
+[0;32mI (1543) MAIN: Waiting for Bluetooth WiFi config...[0m
+[0;32mI (1548) main_task: Returned from app_main()[0m
+[0;32mI (1668) BMP280: Initializating BMP280[0m
+[0;32mI (1780) DS18B20_1_WIRE: Initializating DS18B20[0m
+full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full2full2full2full2full2full2full2full2full2full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full2full2full2full1full1full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full2full2full2full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1[0;32mI (7432) MAIN: Recording: ON[0m
+[0;32mI (7464) SD_CARD_SPI: Started writing to file: /data/data18.bin[0m
+000000000000010000000000000000000000000000000000000000000000000000000000000011010100000000000000000000000000110101101000000000000000000000000101010101010000000000000000000000000010101010100000000000000000000000010101010101011000000000000000000000000000000000000000000000000000000001101010101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000����������������������������������������������������������������00000000000000101010000000000000000000000000101010101000000000000000000000000000010101010000000000000000000000001010101010101010100000000000000000000001010100000000000000000000000000101010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000101010101000000000000000000000000000101010100000000000000000000000001010101101010000000000000000000000000100000000000000000000000000000010[0;32mI (35984) MAIN: Recording: OFF[0m
+[0;32mI (36250) SD_CARD_SPI: File closed[0m
+full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full2full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full2full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full2full2full2full2full2full2full2full2full2full2full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full2full2full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full2full2full2full2full2full2full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full2full2full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full2full2full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full2full2full2full2full2full2full2full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full2full2full2full2full2full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full2full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full2full1full1full1full1full2full1full1full1full
